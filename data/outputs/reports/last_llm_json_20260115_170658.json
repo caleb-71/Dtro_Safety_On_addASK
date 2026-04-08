@@ -1,0 +1,39 @@
+{
+  "basic_info": {
+    "report_id": "110",
+    "incident_datetime": "2025-11-16 21:10:00",
+    "location": "칠곡경대병원 엘리베이터 #2 출입구",
+    "category": "공사시설물파손",
+    "severity": "미정",
+    "reporter": ""
+  },
+  "incident_overview": {
+    "summary": "",
+    "timeline": "해당없음"
+  },
+  "immediate_actions": {
+    "actions_taken": "",
+    "current_status": "해당없음"
+  },
+  "root_cause": {
+    "facts_only": [
+      "사고가 발생한 시각은 2025-11-16 21:10:00",
+      "장소는 칠곡경대병원 엘리베이터 #2 출입구"
+    ],
+    "assumptions_only": [
+      "사고의 원인은 제3자기인으로 추정",
+      "사고자1로 인한 사고로 추정"
+    ]
+  },
+  "regulation_check": {
+    "potential_violations": "",
+    "citations": ""
+  },
+  "prevention": {
+    "prevention_plan": [
+      "엘리베이터의 정기 점검과 유지보수를 철저히 하기",
+      "사고의 원인이 되는 제3자기인에 대한 대책을 마련하기"
+    ],
+    "owner_due": ""
+  }
+}

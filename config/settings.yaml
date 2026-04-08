@@ -1,0 +1,48 @@
+# config/settings.yaml
+# DTRO-Safety-On 전역 설정 (로컬/사내서버 공통)
+# - 코드에서 이 파일을 읽어 경로, 모델, RAG 파라미터를 통일해서 사용합니다.
+#
+# ✅ 운영 권장:
+# - FAISS 인덱스/메타/체크섬은 "한글 없는 경로"에 고정 권장 (Windows Illegal byte sequence 방지)
+# - 기본값은 C:\DTRO_DATA\index 를 사용
+# - 다른 PC에서 경로를 바꾸고 싶으면 환경변수 DTRO_INDEX_ROOT 로 덮어쓸 수 있게
+#   (코드에서 처리하도록 하는 것이 가장 깔끔하지만, 현재는 settings.yaml을 기준으로 통일)
+
+app:
+  name: "DTRO-Safety-On"
+  env: "local"   # local | server (추후 구분용)
+
+paths:
+  # 프로젝트 데이터(트렌드 CSV, 원본 문서 등)는 프로젝트 내부 data 폴더 유지 권장
+  data_dir: "data"
+  docs_dir: "data/docs"
+
+  # ✅ 핵심: 인덱스는 외부 고정 경로로 통일 (한글/공백/경로 이슈 최소화)
+  # - 실제 파일이 존재하는 곳: C:\DTRO_DATA\index
+  # - Windows에서 / 표기 권장(이스케이프 문제 최소)
+  index_dir: "C:/DTRO_DATA/index"
+
+  # outputs/logs는 프로젝트 내부 유지(원하면 이것도 C:\DTRO_DATA\outputs 로 분리 가능)
+  outputs_dir: "data/outputs"
+  logs_dir: "data/outputs/logs"
+
+ollama:
+  base_url: "http://localhost:11434"
+  llm_model: "llama3.1:8b"
+  embed_model: "nomic-embed-text"
+
+  # ✅ CPU 환경이면 보고서/QA에서 오래 걸릴 수 있어 넉넉히
+  timeout_sec: 1200
+
+rag:
+  chunk_size: 1000
+  chunk_overlap: 150
+
+  # ✅ 실전 기본(속도 우선): 3~5 권장
+  top_k: 3
+  min_chunk_chars: 200
+
+index:
+  faiss_index_file: "faiss.index"
+  meta_file: "meta.jsonl"
+  checksum_file: "checksum.json"

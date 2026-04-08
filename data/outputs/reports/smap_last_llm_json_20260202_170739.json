@@ -1,0 +1,55 @@
+{
+  "basic_info": {
+    "row_id": "",
+    "checked_at": "",
+    "check_category": "",
+    "check_type": "",
+    "title": "",
+    "target_dept": "",
+    "issue_type": "",
+    "action_type": "",
+    "place_main": "",
+    "place_detail": "",
+    "inspector": "",
+    "action_status": "",
+    "action_completed_at": ""
+  },
+  "overview": {
+    "summary": ""
+  },
+  "actions": {
+    "action_result": ""
+  },
+  "root_cause": {
+    "facts_only": [
+      "- 최근 30일 동일 지적유형 증가 (근거: similar_context)",
+      "- 조치 미완료 비중이 높음 (근거: safety_map_data)"
+    ],
+    "assumptions_only": [
+      "- 취약 부서×유형 조합 반복 (근거: analysis 피벗)"
+    ]
+  },
+  "prevention": {
+    "prevention_plan": [
+      "- 재발방지 대책1 (근거: reg_context)",
+      "- 재발방지 대책2 (근거: similar_context)"
+    ]
+  },
+  "analysis": {
+    "kpi_summary": [
+      "- 건수 증가 (근거: safety_map_data)",
+      "- 최근 급증 (근거: analysis 피벗)"
+    ],
+    "weekly_summary": [
+      "- 주간 증가 (근거: similar_context)",
+      "- 반복구간 (근거: reg_context)"
+    ],
+    "pivot_heatmap": [
+      "- 부서×지적유형 Top 3 (근거: analysis 피벗)"
+    ],
+    "risk_forecast": [
+      "- 향후 발생 가능성 (근거: reg_context)",
+      "- 최근 급증/반복/미조치 비중 (근거: safety_map_data)"
+    ]
+  }
+}

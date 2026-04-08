@@ -1,0 +1,18 @@
+[theme]
+# 기본 베이스를 다크 모드로 설정합니다.
+base = "dark"
+
+# 고급스러운 짙은 검정색 (메인 바탕화면)
+backgroundColor = "#121212"
+
+# 사이드바 및 배경 위젯 색상 (약간 더 밝은 다크 그레이로 입체감 부여)
+secondaryBackgroundColor = "#1E1E1E"
+
+# 텍스트 색상 (완전 흰색보다 눈이 편안한 오프화이트)
+textColor = "#E0E0E0"
+
+# 포인트 컬러 (로딩 바, 캘린더 선택, 버튼 등 - 고급스러운 골드나 블루 추천)
+# 골드: "#D4AF37", DTRO 블루: "#005BAC"
+primaryColor = "#D4AF37"
+
+font = "sans serif"

@@ -1,0 +1,36 @@
+{
+  "basic_info": {
+    "row_id": "SMAP-2560b9239125",
+    "checked_at": "2026-01-09",
+    "check_category": "지도",
+    "check_type": "일상",
+    "title": "소화기 점검 누락",
+    "target_dept": "2고객센터",
+    "issue_type": "화재예방",
+    "action_type": "현지조치",
+    "place_main": "역",
+    "place_detail": "정평역 승강장, 대합실",
+    "inspector": "김지원, 황성기",
+    "action_status": "완료",
+    "action_completed_at": "2026-01-12"
+  },
+  "overview": {
+    "summary": "소화기 점검 누락이 발견되어 대합실, 승강장 소화기 점검을 실시했습니다. 확인된 사실은 다음과 같습니다: - 소화기 점검 누락 (근거: safety_map_data) - 최근 30일 동일 지적유형 증가 (근거: similar_context)"
+  },
+  "actions": {
+    "action_result": "대합실, 승강장 소화기 점검 실시"
+  },
+  "root_cause": {
+    "facts_only": "소화기 점검 누락 (근거: safety_map_data)",
+    "assumptions_only": "- 최근 30일 동일 지적유형 증가 (근거: similar_context)"
+  },
+  "prevention": {
+    "prevention_plan": "- 소화기 점검 주기적인 실시 - 소화기 관리 책임자 지정 - 소화기 사용 교육"
+  },
+  "analysis": {
+    "kpi_summary": "- 최근 30일 동일 지적유형 증가 (근거: similar_context)",
+    "weekly_summary": "- 조치 미완료 비중이 높음 (근거: safety_map_data)",
+    "pivot_heatmap": "- 취약 부서×유형 조합 반복 (근거: analysis 피벗)",
+    "risk_forecast": "향후 발생 가능성은 높은 것으로 예상됩니다."
+  }
+}

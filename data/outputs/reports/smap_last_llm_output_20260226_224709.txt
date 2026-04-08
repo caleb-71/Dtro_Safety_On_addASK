@@ -1,0 +1,99 @@
+입력된 점검 데이터와 유사점검 분석 요약, 규정 근거를 바탕으로 DTRO 점검 표준 양식(report_base_safety_map.json v1.0-safety_map)에 맞는 보고서 JSON을 작성합니다.
+
+**basic_info**
+
+* `row_id`: "SMAP-48f9a981dffc"
+* `checked_at`: "2026-01-09"
+* `check_category`: "지도"
+* `check_type`: "일상"
+* `title`: "MSDS자료 현행화 미흡"
+* `target_dept`: "전기통신사업소"
+* `issue_type`: "산업안전"
+* `action_type`: "현지조치"
+* `place_main`: "통신기계실"
+* `place_detail`: "영남대역 통신기계실"
+* `inspector`: "김지원, 황성기"
+* `action_status`: "완료"
+* `action_completed_at`: "2026-01-13"
+
+**overview.summary**
+
+점검한 내용과 지적된 사항을 3~6줄 요약합니다.
+
+* 무엇을/어디를/왜/어떻게 점검했고 무엇이 지적되었는지
+* 최소 2줄 이상 작성 (빈칸 금지)
+* 입력이 부족하면 "추가 확인 필요"를 포함하여도 요약 작성
+
+**actions.action_result**
+
+조치 결과 내용을 간단히 작성합니다.
+
+* 조치결과 정책을 반드시 적용해 빈칸이 나오지 않게 합니다.
+* action_status == "미조치" AND action_result가 비어있거나 미기재이면 -> action_result = "미조치"
+* action_status == "완료" AND action_result가 비어있거나 미기재이면 -> action_result = "완료(내용 미기재)"
+
+**root_cause**
+
+점검 데이터/유사점검 요약/규정 근거에서 "확인 가능한 사실"만 bullet로 작성합니다.
+
+* facts_only: 점검 데이터/유사점검 요약/규정 근거에서 "확인 가능한 사실"만 bullet로
+* assumptions_only: 사실을 근거로 한 추정/판단을 bullet로 (단정 금지)
+
+**prevention.prevention_plan**
+
+재발방지 대책을 bullet로 작성합니다.
+
+* 시설/절차/점검/교육 관점
+
+**analysis**
+
+* kpi_summary: 건수/최근급증/Top 범주를 bullet로
+* weekly_summary: 주간 증가/반복구간을 bullet로
+* pivot_heatmap: 피벗 상위 조합(부서×지적유형) Top 3~5를 bullet로
+* risk_forecast: 최근 급증/반복/미조치 비중 등을 근거로 "향후 발생 가능성"을 표현 (단정 금지)
+
+**품질 강제**
+
+모든 bullet 끝에는 근거 태그를 붙이세요.
+
+* 예: "- 최근 30일 동일 지적유형 증가 (근거: similar_context)"
+* 예: "- 조치 미완료 비중이 높음 (근거: safety_map_data)"
+* 예: "- 취약 부서×유형 조합 반복 (근거: analysis 피벗)"
+
+**출력**
+
+JSON만 출력하세요. 설명/해설/주석/마크다운/코드블록 금지.
+
+```
+{
+  "basic_info": {
+    "row_id": "SMAP-48f9a981dffc",
+    "checked_at": "2026-01-09",
+    "check_category": "지도",
+    "check_type": "일상",
+    "title": "MSDS자료 현행화 미흡",
+    "target_dept": "전기통신사업소",
+    "issue_type": "산업안전",
+    "action_type": "현지조치",
+    "place_main": "통신기계실",
+    "place_detail": "영남대역 통신기계실",
+    "inspector": "김지원, 황성기",
+    "action_status": "완료",
+    "action_completed_at": "2026-01-13"
+  },
+  "overview": {
+    "summary": "MSDS자료 현행화 미흡, 최근 30일 동일 지적유형 증가 (근거: similar_context)"
+  },
+  "actions": {
+    "action_result": "니켈수소 배터리 MSDS자료 현행화 완료"
+  },
+  "root_cause": {
+    "facts_only": "- 최근 30일 동일 지적유형 증가 (근거: similar_context)",
+    "assumptions_only": ""
+  },
+  "prevention": {
+    "prevention_plan": "- 재발방지 대책1 (근거: safety_map_data), - 재발방지 대책2 (근거: analysis 피벗)"
+  },
+  "analysis": {
+    "kpi_summary": "- 건수: 11건, - 최근급증: 30일 동일 지적유형 증가",
+    "weekly_summary

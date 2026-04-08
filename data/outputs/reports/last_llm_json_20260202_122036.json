@@ -1,0 +1,50 @@
+{
+  "basic_info": {
+    "report_id": "1",
+    "incident_datetime": "2026-01-26 00:00:00 10:46:00",
+    "category": "동향보고",
+    "line": "3호선",
+    "station": "황금",
+    "detail_location": "에스컬레이터",
+    "accident_type": "넘어짐",
+    "related_train": "",
+    "cctv": "유",
+    "weather": "맑음",
+    "severity": "중",
+    "reporter": ""
+  },
+  "incident_overview": {
+    "summary": "상기 일시에 E/S#2 탑승 후 중심을 잃어 넘어짐 발생. 응급처치가 이루어졌으나 현재 상태는 미상이다."
+  },
+  "incident_timeline": {
+    "timeline": [
+      "10:46 넘어짐 발생",
+      "10:48 응급처치",
+      "11:50 119 호출거부 및 귀가"
+    ]
+  },
+  "immediate_actions": {
+    "actions_taken": [
+      "응급처치(고객안내센터)",
+      "사고 발견 : 직원 최성훈",
+      "역무관리실 응급처치"
+    ],
+    "current_status": "미상"
+  },
+  "root_cause": {
+    "facts_only": [
+      "넘어짐 발생",
+      "응급처치가 이루어졌으나 현재 상태는 미상이다."
+    ],
+    "assumptions_only": [
+      "중심을 잃은 것으로 추정된다.",
+      "사고의 원인은 본인부주의로 보인다."
+    ]
+  },
+  "prevention": {
+    "prevention_plan": [
+      "추가 확인 필요 항목",
+      "일반 예방대책 : 사고 발생 시 응급처치를 즉시 시행하고, 현재 상태를 파악하여 보고해야 한다."
+    ]
+  }
+}

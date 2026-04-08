@@ -1,0 +1,31 @@
+JSON 보고서를 작성하기 위해 필요한 정보와 규칙을 요약하면 다음과 같습니다.
+
+### 입력 데이터
+
+* 점검 데이터: `safety_map_data`
+* 유사점검 분석 요약: `similar_context` (있으면)
+* 규정 근거: `reg_context` (있으면)
+
+### 필수 기재 항목
+
+* `root_cause.facts_only`: 점검 데이터/유사점검 요약/규정근거에서 "확인 가능한 사실"만 bullet로.
+* `root_cause.assumptions_only`: 사실을 근거로 한 추정/판단을 bullet로 (단정 금지).
+* `prevention.prevention_plan`: 재발방지 대책 bullet (시설/절차/점검/교육 관점).
+
+### 출력 규칙
+
+1. 반드시 JSON만 출력하세요.
+2. 출력의 첫 글자는 '{' 이어야 하고, 마지막 글자는 '}' 이어야 합니다.
+3. JSON 외의 어떤 문자도 앞뒤에 붙이지 마세요.
+
+### 작성 지침
+
+* `overview.summary`: 무엇을/어디를/왜/어떻게 점검했고 무엇이 지적되었는지 3~6줄 요약.
+* `analysis.kpi_summary`: 건수/최근급증/Top 범주를 bullet로.
+* `analysis.weekly_summary`: 주간 증가/반복구간을 bullet로.
+* `analysis.pivot_heatmap`: 피벗 상위 조합(부서×지적유형) Top 3~5를 bullet로.
+* `risk_forecast`: 최근 급증/반복/미조치 비중 등을 근거로 "향후 발생 가능성"을 표현 (단정 금지).
+
+### 품질 강제
+
+* 모든 bullet 끝에는 근거 태그를 붙이세요.

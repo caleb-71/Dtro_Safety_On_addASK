@@ -1,0 +1,816 @@
+2026-03-02 16:01:39,379 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:01:39,381 | INFO | __main__ | 데이터 로딩 중: safety_map.csv
+2026-03-02 16:01:39,399 | INFO | backend.integrations.ollama_client | [GEN-START] rid=47ec414b model=llama3.1:8b prompt_len=307 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:01:50,252 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=47ec414b attempt=1/3 dt=10.85s
+2026-03-02 16:01:50,262 | INFO | backend.integrations.ollama_client | [GEN-END] rid=47ec414b model=llama3.1:8b elapsed=10.86s text_len=61 total_ms=8813 timeout_read=1200s
+2026-03-02 16:01:50,262 | INFO | backend.integrations.ollama_client | [GEN-START] rid=82419226 model=llama3.1:8b prompt_len=310 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:01:52,392 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=82419226 attempt=1/3 dt=2.13s
+2026-03-02 16:01:52,393 | INFO | backend.integrations.ollama_client | [GEN-END] rid=82419226 model=llama3.1:8b elapsed=2.13s text_len=83 total_ms=2127 timeout_read=1200s
+2026-03-02 16:01:52,393 | INFO | backend.integrations.ollama_client | [GEN-START] rid=aacc5937 model=llama3.1:8b prompt_len=325 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:01:55,661 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=aacc5937 attempt=1/3 dt=3.27s
+2026-03-02 16:01:55,661 | INFO | backend.integrations.ollama_client | [GEN-END] rid=aacc5937 model=llama3.1:8b elapsed=3.27s text_len=92 total_ms=3265 timeout_read=1200s
+2026-03-02 16:01:55,662 | INFO | __main__ | 데이터 로딩 중: trend.csv
+2026-03-02 16:01:55,765 | INFO | backend.integrations.ollama_client | [GEN-START] rid=3043dd64 model=llama3.1:8b prompt_len=346 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:01:59,348 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=3043dd64 attempt=1/3 dt=3.58s
+2026-03-02 16:01:59,348 | INFO | backend.integrations.ollama_client | [GEN-END] rid=3043dd64 model=llama3.1:8b elapsed=3.58s text_len=108 total_ms=3580 timeout_read=1200s
+2026-03-02 16:01:59,348 | INFO | backend.integrations.ollama_client | [GEN-START] rid=69ff26a4 model=llama3.1:8b prompt_len=345 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:02:01,768 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=69ff26a4 attempt=1/3 dt=2.42s
+2026-03-02 16:02:01,768 | INFO | backend.integrations.ollama_client | [GEN-END] rid=69ff26a4 model=llama3.1:8b elapsed=2.42s text_len=64 total_ms=2416 timeout_read=1200s
+2026-03-02 16:02:01,768 | INFO | backend.integrations.ollama_client | [GEN-START] rid=82ab921c model=llama3.1:8b prompt_len=384 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:02:05,931 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=82ab921c attempt=1/3 dt=4.16s
+2026-03-02 16:02:05,931 | INFO | backend.integrations.ollama_client | [GEN-END] rid=82ab921c model=llama3.1:8b elapsed=4.16s text_len=118 total_ms=4159 timeout_read=1200s
+2026-03-02 16:03:47,655 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:03:47,668 | INFO | backend.integrations.ollama_client | [GEN-START] rid=0b4779d7 model=llama3.1:8b prompt_len=295 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:03:53,488 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=0b4779d7 attempt=1/3 dt=5.82s
+2026-03-02 16:03:53,488 | INFO | backend.integrations.ollama_client | [GEN-END] rid=0b4779d7 model=llama3.1:8b elapsed=5.82s text_len=102 total_ms=3801 timeout_read=1200s
+2026-03-02 16:07:19,343 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:07:19,357 | INFO | backend.integrations.ollama_client | [GEN-START] rid=aa222a50 model=llama3.1:8b prompt_len=295 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:07:24,089 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=aa222a50 attempt=1/3 dt=4.73s
+2026-03-02 16:07:24,089 | INFO | backend.integrations.ollama_client | [GEN-END] rid=aa222a50 model=llama3.1:8b elapsed=4.73s text_len=57 total_ms=2677 timeout_read=1200s
+2026-03-02 16:07:24,090 | INFO | backend.integrations.ollama_client | [GEN-START] rid=2e0de58c model=llama3.1:8b prompt_len=298 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:07:34,142 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=2e0de58c attempt=1/3 dt=10.05s
+2026-03-02 16:07:34,142 | INFO | backend.integrations.ollama_client | [GEN-END] rid=2e0de58c model=llama3.1:8b elapsed=10.05s text_len=391 total_ms=10048 timeout_read=1200s
+2026-03-02 16:07:34,143 | INFO | backend.integrations.ollama_client | [GEN-START] rid=4b171f4b model=llama3.1:8b prompt_len=313 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:07:36,805 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=4b171f4b attempt=1/3 dt=2.66s
+2026-03-02 16:07:36,805 | INFO | backend.integrations.ollama_client | [GEN-END] rid=4b171f4b model=llama3.1:8b elapsed=2.66s text_len=76 total_ms=2659 timeout_read=1200s
+2026-03-02 16:07:36,805 | INFO | backend.integrations.ollama_client | [GEN-START] rid=ee2fcd2a model=llama3.1:8b prompt_len=322 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:07:42,550 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=ee2fcd2a attempt=1/3 dt=5.75s
+2026-03-02 16:07:42,551 | INFO | backend.integrations.ollama_client | [GEN-END] rid=ee2fcd2a model=llama3.1:8b elapsed=5.75s text_len=165 total_ms=5742 timeout_read=1200s
+2026-03-02 16:07:42,551 | INFO | backend.integrations.ollama_client | [GEN-START] rid=3de8d7a5 model=llama3.1:8b prompt_len=338 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:07:49,359 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=3de8d7a5 attempt=1/3 dt=6.81s
+2026-03-02 16:07:49,359 | INFO | backend.integrations.ollama_client | [GEN-END] rid=3de8d7a5 model=llama3.1:8b elapsed=6.81s text_len=181 total_ms=6805 timeout_read=1200s
+2026-03-02 16:07:49,359 | INFO | backend.integrations.ollama_client | [GEN-START] rid=234809ba model=llama3.1:8b prompt_len=313 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:07:52,058 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=234809ba attempt=1/3 dt=2.70s
+2026-03-02 16:07:52,058 | INFO | backend.integrations.ollama_client | [GEN-END] rid=234809ba model=llama3.1:8b elapsed=2.70s text_len=69 total_ms=2695 timeout_read=1200s
+2026-03-02 16:07:52,058 | INFO | backend.integrations.ollama_client | [GEN-START] rid=384856a5 model=llama3.1:8b prompt_len=310 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:07:56,432 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=384856a5 attempt=1/3 dt=4.37s
+2026-03-02 16:07:56,432 | INFO | backend.integrations.ollama_client | [GEN-END] rid=384856a5 model=llama3.1:8b elapsed=4.37s text_len=111 total_ms=4371 timeout_read=1200s
+2026-03-02 16:07:56,433 | INFO | backend.integrations.ollama_client | [GEN-START] rid=a0d19ec2 model=llama3.1:8b prompt_len=308 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:08:00,469 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=a0d19ec2 attempt=1/3 dt=4.04s
+2026-03-02 16:08:00,469 | INFO | backend.integrations.ollama_client | [GEN-END] rid=a0d19ec2 model=llama3.1:8b elapsed=4.04s text_len=134 total_ms=4033 timeout_read=1200s
+2026-03-02 16:08:00,470 | INFO | backend.integrations.ollama_client | [GEN-START] rid=6a42e502 model=llama3.1:8b prompt_len=318 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:08:05,959 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=6a42e502 attempt=1/3 dt=5.49s
+2026-03-02 16:08:05,959 | INFO | backend.integrations.ollama_client | [GEN-END] rid=6a42e502 model=llama3.1:8b elapsed=5.49s text_len=156 total_ms=5487 timeout_read=1200s
+2026-03-02 16:08:05,959 | INFO | backend.integrations.ollama_client | [GEN-START] rid=613cae4b model=llama3.1:8b prompt_len=309 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:08:09,212 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=613cae4b attempt=1/3 dt=3.25s
+2026-03-02 16:08:09,212 | INFO | backend.integrations.ollama_client | [GEN-END] rid=613cae4b model=llama3.1:8b elapsed=3.25s text_len=89 total_ms=3249 timeout_read=1200s
+2026-03-02 16:08:09,304 | INFO | backend.integrations.ollama_client | [GEN-START] rid=60a3dc19 model=llama3.1:8b prompt_len=307 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:08:11,669 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=60a3dc19 attempt=1/3 dt=2.37s
+2026-03-02 16:08:11,669 | INFO | backend.integrations.ollama_client | [GEN-END] rid=60a3dc19 model=llama3.1:8b elapsed=2.37s text_len=60 total_ms=2362 timeout_read=1200s
+2026-03-02 16:08:11,669 | INFO | backend.integrations.ollama_client | [GEN-START] rid=df141d1a model=llama3.1:8b prompt_len=303 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:08:13,172 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=df141d1a attempt=1/3 dt=1.50s
+2026-03-02 16:08:13,172 | INFO | backend.integrations.ollama_client | [GEN-END] rid=df141d1a model=llama3.1:8b elapsed=1.50s text_len=32 total_ms=1499 timeout_read=1200s
+2026-03-02 16:08:13,172 | INFO | backend.integrations.ollama_client | [GEN-START] rid=ed270ae4 model=llama3.1:8b prompt_len=307 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:08:15,589 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=ed270ae4 attempt=1/3 dt=2.42s
+2026-03-02 16:08:15,589 | INFO | backend.integrations.ollama_client | [GEN-END] rid=ed270ae4 model=llama3.1:8b elapsed=2.42s text_len=61 total_ms=2413 timeout_read=1200s
+2026-03-02 16:08:15,590 | INFO | backend.integrations.ollama_client | [GEN-START] rid=a9473772 model=llama3.1:8b prompt_len=303 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:08:17,676 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=a9473772 attempt=1/3 dt=2.09s
+2026-03-02 16:08:17,676 | INFO | backend.integrations.ollama_client | [GEN-END] rid=a9473772 model=llama3.1:8b elapsed=2.09s text_len=58 total_ms=2084 timeout_read=1200s
+2026-03-02 16:08:17,676 | INFO | backend.integrations.ollama_client | [GEN-START] rid=48b17ca4 model=llama3.1:8b prompt_len=307 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:08:20,512 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=48b17ca4 attempt=1/3 dt=2.84s
+2026-03-02 16:08:20,513 | INFO | backend.integrations.ollama_client | [GEN-END] rid=48b17ca4 model=llama3.1:8b elapsed=2.84s text_len=72 total_ms=2833 timeout_read=1200s
+2026-03-02 16:08:20,513 | INFO | backend.integrations.ollama_client | [GEN-START] rid=9ad41fce model=llama3.1:8b prompt_len=307 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:08:23,224 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=9ad41fce attempt=1/3 dt=2.71s
+2026-03-02 16:08:23,224 | INFO | backend.integrations.ollama_client | [GEN-END] rid=9ad41fce model=llama3.1:8b elapsed=2.71s text_len=72 total_ms=2707 timeout_read=1200s
+2026-03-02 16:08:23,224 | INFO | backend.integrations.ollama_client | [GEN-START] rid=3177359c model=llama3.1:8b prompt_len=308 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:08:26,046 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=3177359c attempt=1/3 dt=2.82s
+2026-03-02 16:08:26,046 | INFO | backend.integrations.ollama_client | [GEN-END] rid=3177359c model=llama3.1:8b elapsed=2.82s text_len=77 total_ms=2819 timeout_read=1200s
+2026-03-02 16:08:26,046 | INFO | backend.integrations.ollama_client | [GEN-START] rid=a77d27a2 model=llama3.1:8b prompt_len=306 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:08:28,700 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=a77d27a2 attempt=1/3 dt=2.65s
+2026-03-02 16:08:28,700 | INFO | backend.integrations.ollama_client | [GEN-END] rid=a77d27a2 model=llama3.1:8b elapsed=2.65s text_len=71 total_ms=2651 timeout_read=1200s
+2026-03-02 16:08:28,701 | INFO | backend.integrations.ollama_client | [GEN-START] rid=ac608f0a model=llama3.1:8b prompt_len=303 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:08:31,651 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=ac608f0a attempt=1/3 dt=2.95s
+2026-03-02 16:08:31,652 | INFO | backend.integrations.ollama_client | [GEN-END] rid=ac608f0a model=llama3.1:8b elapsed=2.95s text_len=79 total_ms=2947 timeout_read=1200s
+2026-03-02 16:08:31,652 | INFO | backend.integrations.ollama_client | [GEN-START] rid=dd32aa28 model=llama3.1:8b prompt_len=305 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:08:33,997 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=dd32aa28 attempt=1/3 dt=2.35s
+2026-03-02 16:08:33,997 | INFO | backend.integrations.ollama_client | [GEN-END] rid=dd32aa28 model=llama3.1:8b elapsed=2.35s text_len=59 total_ms=2342 timeout_read=1200s
+2026-03-02 16:08:33,999 | INFO | rag.graph.graph_store | ✅ 지식 지도가 성공적으로 저장되었습니다: C:\Users\USER\PycharmProjects\Dtro_Safety_On\data\index\graph\safety_knowledge.json
+2026-03-02 16:12:37,234 | INFO | rag.graph.graph_store | 📂 지식 지도를 불러왔습니다: C:\Users\USER\PycharmProjects\Dtro_Safety_On\data\index\graph\safety_knowledge.json
+2026-03-02 16:15:35,434 | INFO | rag.graph.graph_store | 📂 지식 지도를 불러왔습니다: C:\Users\USER\PycharmProjects\Dtro_Safety_On\data\index\graph\safety_knowledge.json
+2026-03-02 16:24:52,013 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:24:52,015 | INFO | rag.graph.graph_store | 📂 지식 지도를 불러왔습니다: C:\Users\USER\PycharmProjects\Dtro_Safety_On\data\index\graph\safety_knowledge.json
+2026-03-02 16:24:52,015 | INFO | __main__ | GraphQAService 초기화 완료: 지식 지도를 메모리에 올렸습니다.
+2026-03-02 16:24:52,015 | INFO | __main__ | Graph-RAG 질문 접수: 넘어짐 사고의 주요 원인과 대책을 요약해줘. (키워드: 넘어짐)
+2026-03-02 16:24:52,015 | INFO | backend.integrations.ollama_client | [GEN-START] rid=80965c61 model=llama3.1:8b prompt_len=485 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:25:01,050 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=80965c61 attempt=1/3 dt=9.03s
+2026-03-02 16:25:01,050 | INFO | backend.integrations.ollama_client | [GEN-END] rid=80965c61 model=llama3.1:8b elapsed=9.03s text_len=144 total_ms=6972 timeout_read=1200s
+2026-03-02 16:34:37,342 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-02 16:34:37,551 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-02 16:34:40,086 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 16:34:40,086 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:34:40,087 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 16:34:40,172 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 16:34:40,173 | INFO | rag.retrieval.retriever | [Retriever] index loaded ntotal=3247
+2026-03-02 16:34:40,173 | INFO | backend.services.qa_service | [QAService] index loaded ntotal=3247
+2026-03-02 16:34:40,174 | INFO | __main__ | 👷 구글 시트 감시 로봇이 가동되었습니다.
+2026-03-02 16:34:52,374 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-02 16:34:52,451 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-02 16:34:56,923 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend.csv rows=6944 cols=50 enc=utf-8-sig sep=','
+2026-03-02 16:34:56,986 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map.csv rows=2533 cols=13 enc=utf-8-sig sep=','
+2026-03-02 16:35:03,919 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-02 16:35:03,940 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-02 16:35:04,249 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:35:04,250 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 16:35:04,253 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:35:04,255 | INFO | rag.graph.graph_store | 📂 지식 지도를 불러왔습니다: C:\Users\USER\PycharmProjects\Dtro_Safety_On\data\index\graph\safety_knowledge.json
+2026-03-02 16:35:04,256 | INFO | backend.services.graph_qa_service | GraphQAService 초기화 완료: 지식 지도를 메모리에 올렸습니다.
+2026-03-02 16:35:04,472 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-02 16:35:04,543 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-02 16:35:47,653 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (키워드: 넘어짐)
+2026-03-02 16:35:47,654 | INFO | backend.integrations.ollama_client | [GEN-START] rid=a6fbcf65 model=llama3.1:8b prompt_len=486 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:35:55,935 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=a6fbcf65 attempt=1/3 dt=8.28s
+2026-03-02 16:35:55,935 | INFO | backend.integrations.ollama_client | [GEN-END] rid=a6fbcf65 model=llama3.1:8b elapsed=8.28s text_len=102 total_ms=6220 timeout_read=1200s
+2026-03-02 16:36:20,236 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (키워드: msds)
+2026-03-02 16:36:31,818 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (키워드: 소화기 점검)
+2026-03-02 16:36:37,525 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (키워드: 소화기 점검)
+2026-03-02 16:36:41,070 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (키워드: 소화기)
+2026-03-02 16:36:54,888 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (키워드: 에스컬레이터)
+2026-03-02 16:36:54,889 | INFO | backend.integrations.ollama_client | [GEN-START] rid=b2d20972 model=llama3.1:8b prompt_len=468 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:36:59,411 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=b2d20972 attempt=1/3 dt=4.52s
+2026-03-02 16:36:59,412 | INFO | backend.integrations.ollama_client | [GEN-END] rid=b2d20972 model=llama3.1:8b elapsed=4.52s text_len=140 total_ms=4517 timeout_read=1200s
+2026-03-02 16:37:30,919 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (키워드: 끼임)
+2026-03-02 16:37:30,920 | INFO | backend.integrations.ollama_client | [GEN-START] rid=6c8fd29e model=llama3.1:8b prompt_len=372 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:37:38,306 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=6c8fd29e attempt=1/3 dt=7.39s
+2026-03-02 16:37:38,307 | INFO | backend.integrations.ollama_client | [GEN-END] rid=6c8fd29e model=llama3.1:8b elapsed=7.39s text_len=250 total_ms=7381 timeout_read=1200s
+2026-03-02 16:38:05,852 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (키워드: 부딪힘)
+2026-03-02 16:38:09,286 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (키워드: 부딪힘)
+2026-03-02 16:38:15,940 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:38:16,161 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-02 16:38:16,228 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-02 16:38:19,479 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 16:38:20,088 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 16:38:20,089 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 16:38:23,755 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 16:38:24,388 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 16:38:24,412 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 16:38:33,765 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 16:38:34,399 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 16:38:34,401 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 16:38:35,795 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:38:35,797 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:38:36,231 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 16:38:36,711 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 16:38:37,015 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 16:38:54,033 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:38:56,114 | INFO | backend.integrations.ollama_client | [PING] rid=597c304f ok=True status=200 dt=2.08s
+2026-03-02 16:38:56,119 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 16:38:56,201 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 16:38:56,207 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:38:56,207 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:38:56,328 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 16:39:41,315 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 16:39:42,113 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 16:39:42,113 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 16:39:45,873 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 16:39:46,696 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 16:39:46,699 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 16:39:50,670 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:39:50,672 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:39:50,803 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 16:39:51,081 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 16:39:51,642 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 16:39:51,658 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 16:39:51,929 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:39:53,989 | INFO | backend.integrations.ollama_client | [PING] rid=d58cdbd7 ok=True status=200 dt=2.05s
+2026-03-02 16:39:54,001 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 16:39:54,740 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 16:39:54,754 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:39:54,762 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:39:55,090 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 16:40:00,584 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 16:40:01,354 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 16:40:01,356 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 16:48:15,402 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-02 16:48:15,418 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-02 16:48:17,842 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 16:48:17,843 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:48:17,844 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 16:48:17,903 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 16:48:17,903 | INFO | rag.retrieval.retriever | [Retriever] index loaded ntotal=3247
+2026-03-02 16:48:17,904 | INFO | backend.services.qa_service | [QAService] index loaded ntotal=3247
+2026-03-02 16:48:17,904 | INFO | __main__ | 👷 구글 시트 감시 로봇이 가동되었습니다.
+2026-03-02 16:48:23,679 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-02 16:48:23,693 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-02 16:48:24,028 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:48:24,028 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 16:48:24,030 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:48:24,032 | INFO | rag.graph.graph_store | 📂 지식 지도를 불러왔습니다: C:\Users\USER\PycharmProjects\Dtro_Safety_On\data\index\graph\safety_knowledge.json
+2026-03-02 16:48:24,033 | INFO | backend.services.graph_qa_service | GraphQAService 초기화 완료
+2026-03-02 16:48:24,179 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-02 16:48:24,229 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-02 16:48:40,277 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (입력된 키워드/문장: 에스컬레이터에서 넘어지거나 다친 사례)
+2026-03-02 16:48:40,278 | INFO | backend.integrations.ollama_client | [GEN-START] rid=4f347e08 model=llama3.1:8b prompt_len=181 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:48:46,062 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=4f347e08 attempt=1/3 dt=5.78s
+2026-03-02 16:48:46,062 | INFO | backend.integrations.ollama_client | [GEN-END] rid=4f347e08 model=llama3.1:8b elapsed=5.78s text_len=13 total_ms=3727 timeout_read=1200s
+2026-03-02 16:48:46,063 | INFO | backend.services.graph_qa_service | 🧠 AI가 자연어에서 추출한 키워드: ['장소', '설비명', '사고유형']
+2026-03-02 16:48:46,063 | INFO | backend.integrations.ollama_client | [GEN-START] rid=6ec1a5f8 model=llama3.1:8b prompt_len=337 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:48:48,253 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=6ec1a5f8 attempt=1/3 dt=2.19s
+2026-03-02 16:48:48,253 | INFO | backend.integrations.ollama_client | [GEN-END] rid=6ec1a5f8 model=llama3.1:8b elapsed=2.19s text_len=80 total_ms=2185 timeout_read=1200s
+2026-03-02 16:51:18,296 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (입력된 키워드/문장: 역에서 공통적으로 많이 일어나는 사고는?)
+2026-03-02 16:51:18,297 | INFO | backend.integrations.ollama_client | [GEN-START] rid=19b285dc model=llama3.1:8b prompt_len=183 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:51:19,257 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=19b285dc attempt=1/3 dt=0.96s
+2026-03-02 16:51:19,257 | INFO | backend.integrations.ollama_client | [GEN-END] rid=19b285dc model=llama3.1:8b elapsed=0.96s text_len=13 total_ms=955 timeout_read=1200s
+2026-03-02 16:51:19,258 | INFO | backend.services.graph_qa_service | 🧠 AI가 자연어에서 추출한 키워드: ['장소', '사고유형', '설비명']
+2026-03-02 16:51:19,259 | INFO | backend.integrations.ollama_client | [GEN-START] rid=566f7dcf model=llama3.1:8b prompt_len=339 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 16:51:23,198 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=566f7dcf attempt=1/3 dt=3.94s
+2026-03-02 16:51:23,198 | INFO | backend.integrations.ollama_client | [GEN-END] rid=566f7dcf model=llama3.1:8b elapsed=3.94s text_len=146 total_ms=3936 timeout_read=1200s
+2026-03-02 16:51:40,042 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:51:40,043 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:51:40,172 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 16:51:40,258 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 16:51:40,343 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 16:56:54,577 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-02 16:56:54,594 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-02 16:56:56,850 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 16:56:56,851 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:56:56,852 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 16:56:56,903 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 16:56:56,903 | INFO | rag.retrieval.retriever | [Retriever] index loaded ntotal=3247
+2026-03-02 16:56:56,904 | INFO | backend.services.qa_service | [QAService] index loaded ntotal=3247
+2026-03-02 16:56:56,904 | INFO | __main__ | 👷 구글 시트 감시 로봇이 가동되었습니다.
+2026-03-02 16:57:03,006 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-02 16:57:03,023 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-02 16:57:03,697 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:57:03,698 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:57:03,792 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 16:57:03,855 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 16:57:03,907 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 16:59:15,490 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:59:15,491 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:59:15,589 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 16:59:34,197 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-02 16:59:34,213 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-02 16:59:36,471 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 16:59:36,471 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 16:59:36,472 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 16:59:36,523 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 16:59:36,524 | INFO | rag.retrieval.retriever | [Retriever] index loaded ntotal=3247
+2026-03-02 16:59:36,524 | INFO | backend.services.qa_service | [QAService] index loaded ntotal=3247
+2026-03-02 16:59:36,525 | INFO | __main__ | 👷 구글 시트 감시 로봇이 가동되었습니다.
+2026-03-02 16:59:39,469 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-02 16:59:39,491 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-02 16:59:40,887 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:59:40,888 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 16:59:41,026 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:02:35,947 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:02:35,948 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:02:36,085 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:20:58,221 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-02 17:20:58,238 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-02 17:21:01,070 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:21:01,071 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:21:01,072 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 17:21:01,142 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 17:21:01,142 | INFO | rag.retrieval.retriever | [Retriever] index loaded ntotal=3247
+2026-03-02 17:21:01,143 | INFO | backend.services.qa_service | [QAService] index loaded ntotal=3247
+2026-03-02 17:21:01,143 | INFO | __main__ | 👷 구글 시트 감시 로봇이 가동되었습니다.
+2026-03-02 17:21:07,136 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-02 17:21:07,234 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-02 17:21:10,323 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend.csv rows=6944 cols=50 enc=utf-8-sig sep=','
+2026-03-02 17:21:10,400 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map.csv rows=2533 cols=13 enc=utf-8-sig sep=','
+2026-03-02 17:21:14,854 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:21:15,081 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-02 17:21:15,186 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-02 17:21:17,054 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-02 17:21:17,077 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-02 17:21:17,423 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:21:17,424 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 17:21:17,426 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:21:17,429 | INFO | rag.graph.graph_store | 📂 지식 지도를 불러왔습니다: C:\Users\USER\PycharmProjects\Dtro_Safety_On\data\index\graph\safety_knowledge.json
+2026-03-02 17:21:17,430 | INFO | backend.services.graph_qa_service | GraphQAService 초기화 완료
+2026-03-02 17:21:17,652 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-02 17:21:17,733 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-02 17:21:18,433 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:21:19,116 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:21:19,119 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:21:19,829 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:21:19,837 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:21:20,336 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:21:23,815 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:21:25,866 | INFO | backend.integrations.ollama_client | [PING] rid=1c61b142 ok=True status=200 dt=2.05s
+2026-03-02 17:21:25,878 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 17:21:26,188 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 17:21:26,201 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:21:26,204 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:21:26,539 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:21:49,082 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:21:49,815 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:21:49,816 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:24:47,598 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:24:48,281 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:24:48,282 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:26:44,916 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:26:44,918 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:26:45,060 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:27:19,509 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:27:21,571 | INFO | backend.integrations.ollama_client | [PING] rid=7c370abf ok=True status=200 dt=2.06s
+2026-03-02 17:27:21,575 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 17:27:21,650 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 17:27:21,654 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:27:21,655 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:27:21,786 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:28:06,479 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:28:07,127 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:28:07,128 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:30:24,560 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:30:24,568 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:30:26,041 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:30:26,950 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:30:27,290 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:30:27,291 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:30:27,386 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:30:28,107 | INFO | backend.integrations.ollama_client | [PING] rid=21d1031b ok=True status=200 dt=2.06s
+2026-03-02 17:34:06,008 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:34:06,643 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:34:06,643 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:34:44,546 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:34:44,547 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:34:44,636 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:35:14,475 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:35:15,295 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:35:15,361 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:35:20,848 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:35:21,576 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:35:21,605 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:35:21,620 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:35:21,633 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:35:22,331 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:35:59,564 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:36:00,227 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:36:00,228 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:36:12,029 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:36:12,030 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:36:12,119 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:36:13,129 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:36:14,060 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:36:14,060 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:36:14,151 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:36:15,169 | INFO | backend.integrations.ollama_client | [PING] rid=6dc7f6e8 ok=True status=200 dt=2.04s
+2026-03-02 17:38:35,093 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:38:35,700 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:38:35,701 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:40:37,470 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:40:37,477 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:40:38,044 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:41:58,981 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-02 17:41:58,997 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-02 17:42:01,284 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:42:01,285 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:42:01,286 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 17:42:01,331 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 17:42:01,332 | INFO | rag.retrieval.retriever | [Retriever] index loaded ntotal=3247
+2026-03-02 17:42:01,332 | INFO | backend.services.qa_service | [QAService] index loaded ntotal=3247
+2026-03-02 17:42:01,333 | INFO | __main__ | 👷 구글 시트 감시 로봇이 가동되었습니다.
+2026-03-02 17:42:05,672 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-02 17:42:05,746 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-02 17:42:07,551 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend.csv rows=6944 cols=50 enc=utf-8-sig sep=','
+2026-03-02 17:42:07,633 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map.csv rows=2533 cols=13 enc=utf-8-sig sep=','
+2026-03-02 17:42:18,102 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-02 17:42:18,125 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-02 17:42:18,409 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:42:18,411 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 17:42:18,413 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:42:18,417 | INFO | rag.graph.graph_store | 📂 지식 지도를 불러왔습니다: C:\Users\USER\PycharmProjects\Dtro_Safety_On\data\index\graph\safety_knowledge.json
+2026-03-02 17:42:18,418 | INFO | backend.services.graph_qa_service | GraphQAService 초기화 완료
+2026-03-02 17:42:18,622 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-02 17:42:18,697 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-02 17:42:20,704 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:42:20,707 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:42:21,260 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:44:02,468 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:44:02,468 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:44:02,572 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:44:03,965 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:44:04,102 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-02 17:44:04,158 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-02 17:44:06,652 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:44:07,331 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:44:07,332 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:44:25,639 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:44:25,640 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:44:25,774 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:50:33,443 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:50:34,109 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:50:34,111 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:50:35,448 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:50:36,670 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:50:36,671 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:50:36,802 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:50:37,503 | INFO | backend.integrations.ollama_client | [PING] rid=1839c281 ok=True status=200 dt=2.05s
+2026-03-02 17:50:48,390 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-02 17:50:48,405 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-02 17:50:50,744 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:50:50,745 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:50:50,746 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 17:50:50,795 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 17:50:50,796 | INFO | rag.retrieval.retriever | [Retriever] index loaded ntotal=3247
+2026-03-02 17:50:50,796 | INFO | backend.services.qa_service | [QAService] index loaded ntotal=3247
+2026-03-02 17:50:50,797 | INFO | __main__ | 👷 구글 시트 감시 로봇이 가동되었습니다.
+2026-03-02 17:50:56,292 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:50:56,541 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-02 17:50:56,625 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-02 17:51:00,026 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:51:00,649 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:51:00,650 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:51:01,390 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-02 17:51:01,421 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-02 17:51:01,965 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:51:01,966 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 17:51:01,969 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:51:01,972 | INFO | rag.graph.graph_store | 📂 지식 지도를 불러왔습니다: C:\Users\USER\PycharmProjects\Dtro_Safety_On\data\index\graph\safety_knowledge.json
+2026-03-02 17:51:01,973 | INFO | backend.services.graph_qa_service | GraphQAService 초기화 완료
+2026-03-02 17:51:02,170 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-02 17:51:02,239 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-02 17:51:20,444 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:51:21,102 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:51:21,103 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:51:22,446 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:51:22,447 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:51:22,572 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:51:24,096 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:51:26,193 | INFO | backend.integrations.ollama_client | [PING] rid=1da82ea8 ok=True status=200 dt=2.10s
+2026-03-02 17:51:45,684 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:51:45,685 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:51:45,815 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:51:50,837 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:51:51,475 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:51:51,476 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:52:13,683 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:52:13,684 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:52:13,828 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:57:21,272 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:57:21,273 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:57:21,410 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:57:26,044 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:57:26,698 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:57:26,699 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:57:34,153 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:57:34,219 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:57:34,545 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 17:57:35,249 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 17:57:35,252 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 17:57:35,982 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 17:57:45,737 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 17:57:47,811 | INFO | backend.integrations.ollama_client | [PING] rid=4f879018 ok=True status=200 dt=2.06s
+2026-03-02 17:57:47,815 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 17:57:47,907 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 17:57:47,911 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:57:47,912 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 17:57:48,053 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 18:11:52,284 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 18:11:54,358 | INFO | backend.integrations.ollama_client | [PING] rid=140bf959 ok=True status=200 dt=2.07s
+2026-03-02 18:11:54,361 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 18:11:54,424 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 18:11:54,428 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 18:11:54,428 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 18:11:54,532 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 18:12:11,961 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-02 18:12:12,030 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-02 18:14:14,907 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 18:14:15,651 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 18:14:15,652 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 18:14:15,747 | INFO | report.renderers.font_utils | [PDF] Korean font registered name=DTRO_KR path=C:\Users\USER\PycharmProjects\Dtro_Safety_On\report\pdf_assets\fonts\KOPUB BATANG MEDIUM.TTF
+2026-03-02 18:14:15,801 | INFO | report.renderers.pdf_reportlab | [PDF] generated: C:\Users\USER\PycharmProjects\Dtro_Safety_On\data\outputs\reports\dashboard_summary_20260302_181415.pdf
+2026-03-02 18:14:15,802 | INFO | backend.services.dashboard_service | [dashboard] summary pdf generated: C:\Users\USER\PycharmProjects\Dtro_Safety_On\data\outputs\reports\dashboard_summary_20260302_181415.pdf
+2026-03-02 18:14:35,970 | INFO | backend.services.google_sheet_service | [GoogleSheetService] 구글 시트 연결 성공: DTRO_안전관리_모바일
+2026-03-02 18:14:36,747 | INFO | backend.services.google_sheet_service | [GoogleSync] 모바일 대시보드 KPI 전송 성공
+2026-03-02 18:14:36,747 | INFO | backend.services.dashboard_service | [GoogleSync] 모바일 대시보드 데이터 전송 성공
+2026-03-02 18:14:36,785 | INFO | report.renderers.pdf_reportlab | [PDF] generated: C:\Users\USER\PycharmProjects\Dtro_Safety_On\data\outputs\reports\dashboard_summary_20260302_181436.pdf
+2026-03-02 18:14:36,786 | INFO | backend.services.dashboard_service | [dashboard] summary pdf generated: C:\Users\USER\PycharmProjects\Dtro_Safety_On\data\outputs\reports\dashboard_summary_20260302_181436.pdf
+2026-03-02 18:14:56,012 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend.csv rows=6944 cols=50 enc=utf-8-sig sep=','
+2026-03-02 18:14:56,087 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map.csv rows=2533 cols=13 enc=utf-8-sig sep=','
+2026-03-02 18:23:54,367 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 18:23:55,188 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 18:23:55,189 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 18:23:55,326 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 18:23:56,437 | INFO | backend.integrations.ollama_client | [PING] rid=5fcd0101 ok=True status=200 dt=2.07s
+2026-03-02 18:24:12,861 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-02 18:24:14,924 | INFO | backend.integrations.ollama_client | [PING] rid=41120340 ok=True status=200 dt=2.06s
+2026-03-02 18:24:14,929 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-02 18:24:15,005 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 18:24:15,012 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 18:24:15,012 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 18:24:15,134 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 21:24:28,144 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 21:24:28,145 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-02 21:24:28,296 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-02 21:25:27,158 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-02 21:25:27,159 | INFO | rag.retrieval.retriever | [Retriever] index loaded ntotal=3247
+2026-03-02 21:25:27,159 | INFO | backend.services.qa_service | [QAService] index loaded ntotal=3247
+2026-03-02 21:25:27,160 | INFO | backend.integrations.ollama_client | [EMB-START] rid=6beca7f0 model=nomic-embed-text n=1
+2026-03-02 21:25:31,300 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/embeddings rid=6beca7f0 attempt=1/3 dt=4.14s
+2026-03-02 21:25:31,301 | INFO | backend.integrations.ollama_client | [EMB-OK] rid=6beca7f0 (1/1) dim=768
+2026-03-02 21:25:31,352 | INFO | backend.integrations.ollama_client | [EMB-END] rid=6beca7f0 model=nomic-embed-text n=1 elapsed=4.19s
+2026-03-02 21:25:31,354 | INFO | rag.retrieval.retriever | [Retriever] retrieve done k=3 hits=3
+2026-03-02 21:25:31,364 | INFO | rag.prompting.renderer | [Prompt] template loaded: qa_safety_map_v3.md chars=1666
+2026-03-02 21:25:31,364 | INFO | backend.integrations.ollama_client | [GEN-START] rid=95d8cc68 model=llama3.1:8b prompt_len=1666 num_predict=850 temp=0.2 top_p=0.9
+2026-03-02 21:26:12,281 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=95d8cc68 attempt=1/3 dt=40.92s
+2026-03-02 21:26:12,282 | INFO | backend.integrations.ollama_client | [GEN-END] rid=95d8cc68 model=llama3.1:8b elapsed=40.92s text_len=1112 total_ms=40910 timeout_read=1200s
+2026-03-02 21:26:12,282 | INFO | backend.services.qa_service | [QAService] done dataset=safety_map template=qa_safety_map_v3.md top_k=3 hits=3 context_len=2676 answer_len=1112 per_chunk_chars=1200 max_context_chars=6000 num_predict=850
+2026-03-02 21:27:18,515 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (입력된 키워드/문장: 전선 피복에 관한 점검)
+2026-03-02 21:27:18,516 | INFO | backend.integrations.ollama_client | [GEN-START] rid=6dc9d61d model=llama3.1:8b prompt_len=173 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 21:27:21,601 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=6dc9d61d attempt=1/3 dt=3.08s
+2026-03-02 21:27:21,602 | INFO | backend.integrations.ollama_client | [GEN-END] rid=6dc9d61d model=llama3.1:8b elapsed=3.09s text_len=13 total_ms=1021 timeout_read=1200s
+2026-03-02 21:27:21,602 | INFO | backend.services.graph_qa_service | 🧠 AI가 자연어에서 추출한 키워드: ['장소', '설비명', '사고유형']
+2026-03-02 21:27:21,603 | INFO | backend.integrations.ollama_client | [GEN-START] rid=e9c1f2be model=llama3.1:8b prompt_len=329 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 21:27:28,028 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=e9c1f2be attempt=1/3 dt=6.42s
+2026-03-02 21:27:28,029 | INFO | backend.integrations.ollama_client | [GEN-END] rid=e9c1f2be model=llama3.1:8b elapsed=6.42s text_len=248 total_ms=6422 timeout_read=1200s
+2026-03-02 21:28:12,085 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (입력된 키워드/문장: msds 점검 기록을 모두 보여줘)
+2026-03-02 21:28:12,086 | INFO | backend.integrations.ollama_client | [GEN-START] rid=b0b3184d model=llama3.1:8b prompt_len=179 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 21:28:13,164 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=b0b3184d attempt=1/3 dt=1.08s
+2026-03-02 21:28:13,165 | INFO | backend.integrations.ollama_client | [GEN-END] rid=b0b3184d model=llama3.1:8b elapsed=1.08s text_len=13 total_ms=1074 timeout_read=1200s
+2026-03-02 21:28:13,165 | INFO | backend.services.graph_qa_service | 🧠 AI가 자연어에서 추출한 키워드: ['장소', '설비명', '사고유형']
+2026-03-02 21:28:13,166 | INFO | backend.integrations.ollama_client | [GEN-START] rid=332fb251 model=llama3.1:8b prompt_len=335 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 21:28:16,888 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=332fb251 attempt=1/3 dt=3.72s
+2026-03-02 21:28:16,888 | INFO | backend.integrations.ollama_client | [GEN-END] rid=332fb251 model=llama3.1:8b elapsed=3.72s text_len=141 total_ms=3718 timeout_read=1200s
+2026-03-02 21:29:34,300 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (입력된 키워드/문장: msds 미비치가 사례가 있다. msds를 왜 비치해야 하는가?)
+2026-03-02 21:29:34,301 | INFO | backend.integrations.ollama_client | [GEN-START] rid=5c648983 model=llama3.1:8b prompt_len=196 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 21:29:35,277 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=5c648983 attempt=1/3 dt=0.98s
+2026-03-02 21:29:35,278 | INFO | backend.integrations.ollama_client | [GEN-END] rid=5c648983 model=llama3.1:8b elapsed=0.98s text_len=11 total_ms=973 timeout_read=1200s
+2026-03-02 21:29:35,278 | INFO | backend.services.graph_qa_service | 🧠 AI가 자연어에서 추출한 키워드: ['장소', '설비명', '원인']
+2026-03-02 21:29:41,065 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (입력된 키워드/문장: msds 미비치가 사례가 있다. msds를 왜 비치해야 하는가?)
+2026-03-02 21:29:41,066 | INFO | backend.integrations.ollama_client | [GEN-START] rid=97c6b5cc model=llama3.1:8b prompt_len=196 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 21:29:41,922 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=97c6b5cc attempt=1/3 dt=0.86s
+2026-03-02 21:29:41,922 | INFO | backend.integrations.ollama_client | [GEN-END] rid=97c6b5cc model=llama3.1:8b elapsed=0.86s text_len=11 total_ms=852 timeout_read=1200s
+2026-03-02 21:29:41,923 | INFO | backend.services.graph_qa_service | 🧠 AI가 자연어에서 추출한 키워드: ['장소', '설비명', '원인']
+2026-03-02 21:50:04,409 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (입력된 키워드/문장: msds 미비치 사례가 있다. 비치해야 하는 이유를 말해줘)
+2026-03-02 21:50:04,411 | INFO | backend.integrations.ollama_client | [GEN-START] rid=71abd0d3 model=llama3.1:8b prompt_len=193 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 21:50:08,078 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=71abd0d3 attempt=1/3 dt=3.67s
+2026-03-02 21:50:08,078 | INFO | backend.integrations.ollama_client | [GEN-END] rid=71abd0d3 model=llama3.1:8b elapsed=3.67s text_len=13 total_ms=3664 timeout_read=1200s
+2026-03-02 21:50:08,080 | INFO | backend.services.graph_qa_service | 🧠 AI가 자연어에서 추출한 키워드: ['장소', '설비명', '사고유형']
+2026-03-02 21:50:08,080 | INFO | backend.integrations.ollama_client | [GEN-START] rid=a6312d31 model=llama3.1:8b prompt_len=349 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 21:50:21,479 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=a6312d31 attempt=1/3 dt=13.40s
+2026-03-02 21:50:21,479 | INFO | backend.integrations.ollama_client | [GEN-END] rid=a6312d31 model=llama3.1:8b elapsed=13.40s text_len=535 total_ms=13394 timeout_read=1200s
+2026-03-02 21:51:17,806 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (입력된 키워드/문장: msds 미비치 사례가 있다. 법에서 준수해야 할 msds 관련된 내용을 말해줘)
+2026-03-02 21:51:17,807 | INFO | backend.integrations.ollama_client | [GEN-START] rid=ab660620 model=llama3.1:8b prompt_len=205 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 21:51:18,877 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=ab660620 attempt=1/3 dt=1.07s
+2026-03-02 21:51:18,878 | INFO | backend.integrations.ollama_client | [GEN-END] rid=ab660620 model=llama3.1:8b elapsed=1.07s text_len=13 total_ms=1066 timeout_read=1200s
+2026-03-02 21:51:18,878 | INFO | backend.services.graph_qa_service | 🧠 AI가 자연어에서 추출한 키워드: ['장소', '설비명', '사고유형']
+2026-03-02 21:51:18,879 | INFO | backend.integrations.ollama_client | [GEN-START] rid=ba50ebcd model=llama3.1:8b prompt_len=361 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 21:51:24,815 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=ba50ebcd attempt=1/3 dt=5.94s
+2026-03-02 21:51:24,815 | INFO | backend.integrations.ollama_client | [GEN-END] rid=ba50ebcd model=llama3.1:8b elapsed=5.94s text_len=232 total_ms=5932 timeout_read=1200s
+2026-03-02 21:52:22,571 | INFO | backend.integrations.ollama_client | [EMB-START] rid=84f459da model=nomic-embed-text n=1
+2026-03-02 21:52:23,479 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/embeddings rid=84f459da attempt=1/3 dt=0.91s
+2026-03-02 21:52:23,480 | INFO | backend.integrations.ollama_client | [EMB-OK] rid=84f459da (1/1) dim=768
+2026-03-02 21:52:23,531 | INFO | backend.integrations.ollama_client | [EMB-END] rid=84f459da model=nomic-embed-text n=1 elapsed=0.96s
+2026-03-02 21:52:23,536 | INFO | rag.retrieval.retriever | [Retriever] retrieve done k=3 hits=3
+2026-03-02 21:52:23,538 | INFO | rag.prompting.renderer | [Prompt] template loaded: qa_safety_map_v3.md chars=1666
+2026-03-02 21:52:23,539 | INFO | backend.integrations.ollama_client | [GEN-START] rid=8bb0bf0d model=llama3.1:8b prompt_len=1666 num_predict=850 temp=0.2 top_p=0.9
+2026-03-02 21:52:55,171 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=8bb0bf0d attempt=1/3 dt=31.63s
+2026-03-02 21:52:55,171 | INFO | backend.integrations.ollama_client | [GEN-END] rid=8bb0bf0d model=llama3.1:8b elapsed=31.63s text_len=1012 total_ms=31624 timeout_read=1200s
+2026-03-02 21:52:55,172 | INFO | backend.services.qa_service | [QAService] done dataset=safety_map template=qa_safety_map_v3.md top_k=3 hits=3 context_len=1173 answer_len=1012 per_chunk_chars=1200 max_context_chars=6000 num_predict=850
+2026-03-02 21:57:34,929 | INFO | backend.integrations.ollama_client | [EMB-START] rid=a3c51668 model=nomic-embed-text n=1
+2026-03-02 21:57:36,664 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/embeddings rid=a3c51668 attempt=1/3 dt=1.73s
+2026-03-02 21:57:36,664 | INFO | backend.integrations.ollama_client | [EMB-OK] rid=a3c51668 (1/1) dim=768
+2026-03-02 21:57:36,716 | INFO | backend.integrations.ollama_client | [EMB-END] rid=a3c51668 model=nomic-embed-text n=1 elapsed=1.79s
+2026-03-02 21:57:36,718 | INFO | rag.retrieval.retriever | [Retriever] retrieve done k=3 hits=3
+2026-03-02 21:57:36,720 | INFO | rag.prompting.renderer | [Prompt] template loaded: qa_safety_map_v3.md chars=1666
+2026-03-02 21:57:36,722 | INFO | backend.integrations.ollama_client | [GEN-START] rid=536c23d0 model=llama3.1:8b prompt_len=1666 num_predict=850 temp=0.2 top_p=0.9
+2026-03-02 21:58:07,678 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=536c23d0 attempt=1/3 dt=30.96s
+2026-03-02 21:58:07,678 | INFO | backend.integrations.ollama_client | [GEN-END] rid=536c23d0 model=llama3.1:8b elapsed=30.96s text_len=876 total_ms=30949 timeout_read=1200s
+2026-03-02 21:58:07,679 | INFO | backend.services.qa_service | [QAService] done dataset=safety_map template=qa_safety_map_v3.md top_k=3 hits=3 context_len=1794 answer_len=876 per_chunk_chars=1200 max_context_chars=6000 num_predict=850
+2026-03-02 21:59:42,499 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (입력된 키워드/문장: msds 점검에서 규정에 맞지 않는 건이 발견되었다. 분석해줘)
+2026-03-02 21:59:42,500 | INFO | backend.integrations.ollama_client | [GEN-START] rid=9ac4a293 model=llama3.1:8b prompt_len=195 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 21:59:43,514 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=9ac4a293 attempt=1/3 dt=1.01s
+2026-03-02 21:59:43,514 | INFO | backend.integrations.ollama_client | [GEN-END] rid=9ac4a293 model=llama3.1:8b elapsed=1.01s text_len=13 total_ms=1011 timeout_read=1200s
+2026-03-02 21:59:43,515 | INFO | backend.services.graph_qa_service | 🧠 AI가 자연어에서 추출한 키워드: ['장소', '설비명', '사고유형']
+2026-03-02 21:59:43,515 | INFO | backend.integrations.ollama_client | [GEN-START] rid=90517b40 model=llama3.1:8b prompt_len=351 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 21:59:47,910 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=90517b40 attempt=1/3 dt=4.39s
+2026-03-02 21:59:47,910 | INFO | backend.integrations.ollama_client | [GEN-END] rid=90517b40 model=llama3.1:8b elapsed=4.39s text_len=156 total_ms=4390 timeout_read=1200s
+2026-03-02 22:00:10,045 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해줘. (입력된 키워드/문장: msds 점검기록)
+2026-03-02 22:00:10,046 | INFO | backend.integrations.ollama_client | [GEN-START] rid=80abae7f model=llama3.1:8b prompt_len=170 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 22:00:11,076 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=80abae7f attempt=1/3 dt=1.03s
+2026-03-02 22:00:11,076 | INFO | backend.integrations.ollama_client | [GEN-END] rid=80abae7f model=llama3.1:8b elapsed=1.03s text_len=13 total_ms=1025 timeout_read=1200s
+2026-03-02 22:00:11,077 | INFO | backend.services.graph_qa_service | 🧠 AI가 자연어에서 추출한 키워드: ['장소', '설비명', '사고유형']
+2026-03-02 22:00:11,078 | INFO | backend.integrations.ollama_client | [GEN-START] rid=9e48bb73 model=llama3.1:8b prompt_len=326 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 22:00:13,326 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=9e48bb73 attempt=1/3 dt=2.25s
+2026-03-02 22:00:13,326 | INFO | backend.integrations.ollama_client | [GEN-END] rid=9e48bb73 model=llama3.1:8b elapsed=2.25s text_len=80 total_ms=2245 timeout_read=1200s
+2026-03-02 22:00:44,901 | INFO | backend.services.graph_qa_service | Graph-RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 기준에 맞게 답변해 (입력된 키워드/문장: msds 점검기록)
+2026-03-02 22:00:44,901 | INFO | backend.integrations.ollama_client | [GEN-START] rid=1eabde7f model=llama3.1:8b prompt_len=170 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 22:00:45,907 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=1eabde7f attempt=1/3 dt=1.00s
+2026-03-02 22:00:45,908 | INFO | backend.integrations.ollama_client | [GEN-END] rid=1eabde7f model=llama3.1:8b elapsed=1.00s text_len=13 total_ms=1001 timeout_read=1200s
+2026-03-02 22:00:45,908 | INFO | backend.services.graph_qa_service | 🧠 AI가 자연어에서 추출한 키워드: ['장소', '설비명', '사고유형']
+2026-03-02 22:00:45,909 | INFO | backend.integrations.ollama_client | [GEN-START] rid=a5c309fa model=llama3.1:8b prompt_len=331 num_predict=800 temp=0.2 top_p=0.9
+2026-03-02 22:00:51,426 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=a5c309fa attempt=1/3 dt=5.52s
+2026-03-02 22:00:51,426 | INFO | backend.integrations.ollama_client | [GEN-END] rid=a5c309fa model=llama3.1:8b elapsed=5.52s text_len=221 total_ms=5513 timeout_read=1200s
+2026-03-03 12:53:49,145 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-03 12:53:49,238 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-03 12:53:49,791 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-03-03 12:53:51,112 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-03-03 12:53:51,760 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-03-03 12:53:52,433 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-03-03 12:53:52,434 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-03-03 12:53:59,881 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-03 12:53:59,960 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-03 12:54:02,482 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend.csv rows=6944 cols=50 enc=utf-8-sig sep=','
+2026-03-03 12:54:02,557 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map.csv rows=2533 cols=13 enc=utf-8-sig sep=','
+2026-03-03 12:54:06,230 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-03 12:54:06,478 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-03 12:54:06,563 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-03 12:54:07,599 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-03-03 12:54:08,079 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-03-03 12:54:08,519 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-03-03 12:54:08,924 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-03-03 12:54:08,925 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-03-03 12:54:08,926 | WARNING | backend.services.dashboard_service | [GoogleSync] 동기화 중 오류 발생 (무시 가능): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-03-03 12:54:14,786 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-03-03 12:54:15,373 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-03-03 12:54:15,901 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-03-03 12:54:15,930 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-03-03 12:54:16,016 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-03-03 12:54:16,587 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-03 12:54:16,588 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-03 12:54:16,591 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-03 12:54:16,594 | INFO | rag.graph.graph_store | 📂 지식 지도를 불러왔습니다: C:\Users\정우연\PycharmProjects\Dtro_Safety_On\data\index\graph\safety_knowledge.json
+2026-03-03 12:54:16,597 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-03 12:54:16,626 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-03-03 12:54:16,630 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-03-03 12:54:16,631 | WARNING | backend.services.dashboard_service | [GoogleSync] 동기화 중 오류 발생 (무시 가능): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-03-03 12:54:16,834 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-03 12:54:16,834 | INFO | backend.services.graph_qa_service | GraphQAService: Vector DB (규정) 로드 성공
+2026-03-03 12:54:16,835 | INFO | backend.services.graph_qa_service | GraphQAService 초기화 완료 (Graph + Vector 하이브리드 모드)
+2026-03-03 12:54:17,139 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-03-03 12:54:17,219 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-03-03 12:54:29,584 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-03 12:54:29,589 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-03 12:54:29,894 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-03-03 12:54:38,245 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-03-03 12:54:40,293 | INFO | backend.integrations.ollama_client | [PING] rid=adf5f064 ok=True status=200 dt=2.05s
+2026-03-03 12:54:40,295 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-03-03 12:54:40,395 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-03-03 12:54:40,398 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-03 12:54:40,400 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-03-03 12:54:40,552 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-04-02 09:54:50,534 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-04-02 09:54:50,709 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-04-02 09:54:51,285 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 09:54:51,734 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 09:54:52,541 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 09:54:53,185 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 09:54:53,186 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-04-02 09:55:09,121 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-04-02 09:55:09,417 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-04-02 09:55:09,510 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-04-02 09:55:10,358 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 09:55:10,780 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 09:55:11,199 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 09:55:11,639 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 09:55:11,639 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-04-02 09:55:11,640 | WARNING | backend.services.dashboard_service | [GoogleSync] 동기화 중 오류 발생 (무시 가능): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 09:56:28,079 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-04-02 09:56:28,159 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-04-02 10:02:06,854 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend.csv rows=6944 cols=50 enc=utf-8-sig sep=','
+2026-04-02 10:02:06,963 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map.csv rows=2533 cols=13 enc=utf-8-sig sep=','
+2026-04-02 10:04:25,620 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:04:26,135 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:04:26,550 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:04:26,953 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:04:26,954 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-04-02 10:04:26,955 | WARNING | backend.services.dashboard_service | [GoogleSync] 동기화 중 오류 발생 (무시 가능): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:04:35,128 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:04:35,525 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:04:35,935 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:04:37,552 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:04:37,553 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-04-02 10:04:37,553 | WARNING | backend.services.dashboard_service | [GoogleSync] 동기화 중 오류 발생 (무시 가능): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:07:33,210 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:07:33,602 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:07:34,084 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:07:34,467 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:07:34,467 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-04-02 10:07:34,468 | WARNING | backend.services.dashboard_service | [GoogleSync] 동기화 중 오류 발생 (무시 가능): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:07:35,416 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:07:35,811 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:07:37,476 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:07:37,894 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:07:37,896 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-04-02 10:07:37,897 | WARNING | backend.services.dashboard_service | [GoogleSync] 동기화 중 오류 발생 (무시 가능): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:07:37,934 | INFO | backend.integrations.ollama_client | [GEN-START] rid=5969b789 model=llama3.1:8b prompt_len=7652 num_predict=1200 temp=0.2 top_p=0.9
+2026-04-02 10:10:19,600 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-04-02 10:10:24,075 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-04-02 10:14:56,770 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-04-02 10:14:56,771 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-04-02 10:15:02,875 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-04-02 10:15:02,880 | INFO | rag.graph.graph_store | 📂 지식 지도를 불러왔습니다: C:\Users\정우연\PycharmProjects\Dtro_Safety_On\data\index\graph\safety_knowledge.json
+2026-04-02 10:15:02,881 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-04-02 10:15:23,192 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-04-02 10:15:23,193 | INFO | backend.services.graph_qa_service | GraphQAService: Vector DB (규정) 로드 성공
+2026-04-02 10:15:23,193 | INFO | backend.services.graph_qa_service | GraphQAService 초기화 완료 (Graph + Vector 하이브리드 모드)
+2026-04-02 10:15:51,807 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-04-02 10:16:01,467 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-04-02 10:19:21,006 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)'))': /token
+2026-04-02 10:19:53,424 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)'))': /token
+2026-04-02 10:20:23,254 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)'))': /token
+2026-04-02 10:20:48,725 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))
+2026-04-02 10:20:48,728 | WARNING | backend.services.dashboard_service | [GoogleSync] 동기화 중 오류 발생 (무시 가능): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))
+2026-04-02 10:24:40,432 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=5969b789 attempt=1/3 dt=1022.50s
+2026-04-02 10:24:40,441 | INFO | backend.integrations.ollama_client | [GEN-END] rid=5969b789 model=llama3.1:8b elapsed=1022.51s text_len=1665 total_ms=1020408 timeout_read=1200s
+2026-04-02 10:24:40,686 | INFO | report.renderers.font_utils | [PDF] Korean font registered name=DTRO_KR path=C:\Users\정우연\PycharmProjects\Dtro_Safety_On\report\pdf_assets\fonts\KOPUB BATANG MEDIUM.TTF
+2026-04-02 10:24:41,297 | INFO | report.renderers.pdf_reportlab | [PDF] generated: C:\Users\정우연\PycharmProjects\Dtro_Safety_On\data\outputs\reports\report_20260402_102440.pdf
+2026-04-02 10:24:42,778 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:24:43,379 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:24:44,082 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:24:44,608 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:24:44,609 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-04-02 10:24:44,609 | WARNING | backend.services.dashboard_service | [GoogleSync] 동기화 중 오류 발생 (무시 가능): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:24:49,257 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:24:49,687 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:24:50,170 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:24:50,590 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:24:50,590 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-04-02 10:24:50,591 | WARNING | backend.services.dashboard_service | [GoogleSync] 동기화 중 오류 발생 (무시 가능): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:24:51,374 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:24:51,808 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:24:52,254 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:24:52,718 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:24:52,719 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-04-02 10:24:52,719 | WARNING | backend.services.dashboard_service | [GoogleSync] 동기화 중 오류 발생 (무시 가능): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:24:52,730 | INFO | backend.integrations.ollama_client | [GEN-START] rid=afe156ea model=llama3.1:8b prompt_len=7652 num_predict=1200 temp=0.2 top_p=0.9
+2026-04-02 10:41:28,618 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=afe156ea attempt=1/3 dt=995.89s
+2026-04-02 10:41:28,619 | INFO | backend.integrations.ollama_client | [GEN-END] rid=afe156ea model=llama3.1:8b elapsed=995.89s text_len=2311 total_ms=995853 timeout_read=1200s
+2026-04-02 10:41:28,651 | INFO | report.renderers.pdf_reportlab | [PDF] generated: C:\Users\정우연\PycharmProjects\Dtro_Safety_On\data\outputs\reports\report_20260402_104128.pdf
+2026-04-02 10:41:43,259 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:41:43,693 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:41:44,233 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-02 10:41:44,631 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:41:44,632 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-04-02 10:41:44,632 | WARNING | backend.services.dashboard_service | [GoogleSync] 동기화 중 오류 발생 (무시 가능): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-02 10:58:21,719 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-04-02 10:58:21,719 | INFO | rag.retrieval.retriever | [Retriever] index loaded ntotal=3247
+2026-04-02 10:58:21,719 | INFO | backend.services.qa_service | [QAService] index loaded ntotal=3247
+2026-04-02 10:58:21,720 | INFO | backend.integrations.ollama_client | [EMB-START] rid=f0cddfc2 model=nomic-embed-text n=1
+2026-04-02 10:58:25,119 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/embeddings rid=f0cddfc2 attempt=1/3 dt=3.40s
+2026-04-02 10:58:25,119 | INFO | backend.integrations.ollama_client | [EMB-OK] rid=f0cddfc2 (1/1) dim=768
+2026-04-02 10:58:25,170 | INFO | backend.integrations.ollama_client | [EMB-END] rid=f0cddfc2 model=nomic-embed-text n=1 elapsed=3.45s
+2026-04-02 10:58:25,176 | INFO | rag.retrieval.retriever | [Retriever] retrieve done k=3 hits=3
+2026-04-02 10:58:25,188 | INFO | rag.prompting.renderer | [Prompt] template loaded: qa_trend_v3.md chars=1666
+2026-04-02 10:58:25,189 | INFO | backend.integrations.ollama_client | [GEN-START] rid=98757590 model=llama3.1:8b prompt_len=1666 num_predict=650 temp=0.2 top_p=0.9
+2026-04-02 11:02:51,919 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=98757590 attempt=1/3 dt=266.73s
+2026-04-02 11:02:51,920 | INFO | backend.integrations.ollama_client | [GEN-END] rid=98757590 model=llama3.1:8b elapsed=266.73s text_len=1092 total_ms=266710 timeout_read=1200s
+2026-04-02 11:02:51,920 | INFO | backend.services.qa_service | [QAService] done dataset=trend template=qa_trend_v3.md top_k=3 hits=3 context_len=1494 answer_len=1092 per_chunk_chars=1200 max_context_chars=6000 num_predict=650
+2026-04-02 11:06:36,527 | INFO | backend.services.graph_qa_service | 하이브리드 RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해주고 향후 유사사례가 얼마나 발생할지 예측을 해줘 (입력된 키워드/문장: 에스컬레이터에서 넘어지거나 다친 사례)
+2026-04-02 11:06:36,528 | INFO | backend.integrations.ollama_client | [GEN-START] rid=73cd0b64 model=llama3.1:8b prompt_len=181 num_predict=800 temp=0.2 top_p=0.9
+2026-04-02 11:06:49,028 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=73cd0b64 attempt=1/3 dt=12.50s
+2026-04-02 11:06:49,029 | INFO | backend.integrations.ollama_client | [GEN-END] rid=73cd0b64 model=llama3.1:8b elapsed=12.50s text_len=13 total_ms=10482 timeout_read=1200s
+2026-04-02 11:06:49,029 | INFO | backend.services.graph_qa_service | 🧠 AI가 자연어에서 추출한 키워드: ['장소', '설비명', '사고유형']
+2026-04-02 11:06:49,030 | ERROR | backend.services.graph_qa_service | Vector DB 검색 실패: could not convert string to float: '장소 설비명 사고유형 관련 안전 규정, 예방 대책, 지침'
+2026-04-02 11:06:49,030 | INFO | backend.integrations.ollama_client | [GEN-START] rid=c67917c6 model=llama3.1:8b prompt_len=676 num_predict=800 temp=0.2 top_p=0.9
+2026-04-02 11:07:31,045 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=c67917c6 attempt=1/3 dt=42.01s
+2026-04-02 11:07:31,045 | INFO | backend.integrations.ollama_client | [GEN-END] rid=c67917c6 model=llama3.1:8b elapsed=42.01s text_len=112 total_ms=41998 timeout_read=1200s
+2026-04-02 11:11:45,883 | INFO | backend.services.graph_qa_service | 하이브리드 RAG 질문 접수: 이 사고의 주요 원인과 예방 대책을 요약해주고 향후 유사사례가 얼마나 발생할지 예측을 해줘 (입력된 키워드/문장: E/S에서 넘어지거나 다친 사례)
+2026-04-02 11:11:45,883 | INFO | backend.integrations.ollama_client | [GEN-START] rid=8da9c974 model=llama3.1:8b prompt_len=178 num_predict=800 temp=0.2 top_p=0.9
+2026-04-02 11:11:56,018 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=8da9c974 attempt=1/3 dt=10.13s
+2026-04-02 11:11:56,019 | INFO | backend.integrations.ollama_client | [GEN-END] rid=8da9c974 model=llama3.1:8b elapsed=10.14s text_len=13 total_ms=10132 timeout_read=1200s
+2026-04-02 11:11:56,019 | INFO | backend.services.graph_qa_service | 🧠 AI가 자연어에서 추출한 키워드: ['장소', '설비명', '사고유형']
+2026-04-02 11:11:56,020 | ERROR | backend.services.graph_qa_service | Vector DB 검색 실패: could not convert string to float: '장소 설비명 사고유형 관련 안전 규정, 예방 대책, 지침'
+2026-04-02 11:11:56,020 | INFO | backend.integrations.ollama_client | [GEN-START] rid=22d970a9 model=llama3.1:8b prompt_len=676 num_predict=800 temp=0.2 top_p=0.9
+2026-04-02 11:12:38,900 | INFO | backend.integrations.ollama_client | [OllamaClient] POST ok path=/api/generate rid=22d970a9 attempt=1/3 dt=42.88s
+2026-04-02 11:12:38,901 | INFO | backend.integrations.ollama_client | [GEN-END] rid=22d970a9 model=llama3.1:8b elapsed=42.88s text_len=112 total_ms=42875 timeout_read=1200s
+2026-04-06 10:10:00,928 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-04-06 10:10:01,125 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-04-06 10:10:01,693 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-06 10:10:02,301 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-06 10:10:02,859 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-06 10:10:03,359 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-06 10:10:03,360 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-04-06 10:10:17,431 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend.csv rows=6944 cols=50 enc=utf-8-sig sep=','
+2026-04-06 10:10:17,505 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map.csv rows=2533 cols=13 enc=utf-8-sig sep=','
+2026-04-06 10:10:25,312 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-04-06 10:10:25,388 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-04-08 09:49:35,764 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-04-08 09:49:35,798 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-04-08 09:49:36,770 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-08 09:49:37,267 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-08 09:49:37,851 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-08 09:49:38,296 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-08 09:49:38,307 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-04-08 09:49:48,063 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-04-08 09:49:48,117 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-04-08 09:49:58,028 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend.csv rows=6944 cols=50 enc=utf-8-sig sep=','
+2026-04-08 09:49:58,083 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map.csv rows=2533 cols=13 enc=utf-8-sig sep=','
+2026-04-08 09:50:03,470 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-04-08 09:50:03,733 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-04-08 09:50:03,797 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-04-08 09:50:04,836 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-08 09:50:06,463 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-04-08 09:50:06,490 | INFO | faiss.loader | Successfully loaded faiss with AVX2 support.
+2026-04-08 09:50:06,491 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-08 09:50:06,812 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-04-08 09:50:06,815 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-04-08 09:50:06,838 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-04-08 09:50:06,841 | INFO | rag.graph.graph_store | 📂 지식 지도를 불러왔습니다: C:\Users\정우연\PycharmProjects\Dtro_Safety_On_addASK\data\index\graph\safety_knowledge.json
+2026-04-08 09:50:06,842 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\index faiss_path=C:\DTRO_DATA\index\faiss.index meta_path=C:\DTRO_DATA\index\meta.jsonl checksum_path=C:\DTRO_DATA\index\checksum.json
+2026-04-08 09:50:06,944 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)'))': /token
+2026-04-08 09:50:06,959 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=3247 dim=768 metas=3247
+2026-04-08 09:50:06,959 | INFO | backend.services.graph_qa_service | GraphQAService: Vector DB (규정) 로드 성공
+2026-04-08 09:50:06,960 | INFO | backend.services.graph_qa_service | GraphQAService 초기화 완료 (Graph + Vector 하이브리드 모드)
+2026-04-08 09:50:07,264 | INFO | shared.io.csv_loader | [CSV] loaded ok: trend_norm.csv rows=6944 cols=54 enc=utf-8-sig sep=','
+2026-04-08 09:50:07,321 | INFO | shared.io.csv_loader | [CSV] loaded ok: safety_map_norm.csv rows=2533 cols=18 enc=utf-8-sig sep=','
+2026-04-08 09:50:07,389 | ERROR | backend.services.google_sheet_service | [GoogleSheetService] 연결 실패: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-08 09:50:07,390 | ERROR | backend.services.google_sheet_service | 💡 보안 인증서 차단 지속 발생. 로컬 환경의 강력한 보안 정책 때문입니다.
+2026-04-08 09:50:07,390 | WARNING | backend.services.dashboard_service | [GoogleSync] 동기화 중 오류 발생 (무시 가능): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')))
+2026-04-08 09:50:10,209 | INFO | rag.vectorstores.faiss_store | [FaissStore] init index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-04-08 09:50:10,210 | INFO | rag.vectorstores.faiss_store | [DataFaissStore] init data_index_dir=C:\DTRO_DATA\data_index faiss_path=C:\DTRO_DATA\data_index\faiss.index meta_path=C:\DTRO_DATA\data_index\meta.jsonl checksum_path=C:\DTRO_DATA\data_index\checksum.json
+2026-04-08 09:50:10,583 | INFO | rag.vectorstores.faiss_store | [FaissStore] loaded index ntotal=9477 dim=768 metas=9477
+2026-04-08 09:50:13,475 | INFO | backend.integrations.ollama_client | [OllamaClient] init base_url=http://localhost:11434, llm_model=llama3.1:8b, embed_model=nomic-embed-text, timeout=1200s (connect=10s, read=1200s)
+2026-04-08 09:50:15,526 | INFO | backend.integrations.ollama_client | [PING] rid=f3a086bf ok=True status=200 dt=2.05s

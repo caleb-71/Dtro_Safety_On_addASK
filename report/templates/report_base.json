@@ -1,0 +1,64 @@
+{
+  "title": "DTRO-Safety-On 사고(동향) 보고서",
+  "version": "v1.1-trend",
+  "sections": [
+    {
+      "key": "basic_info",
+      "title": "1. 기본정보",
+      "fields": [
+        { "key": "report_id", "label": "관리번호(순번)" },
+        { "key": "incident_datetime", "label": "발생일시" },
+        { "key": "category", "label": "보고구분" },
+
+        { "key": "line", "label": "호선" },
+        { "key": "station", "label": "역명" },
+        { "key": "detail_location", "label": "세부 위치" },
+
+        { "key": "accident_type", "label": "사고유형" },
+        { "key": "related_train", "label": "관계열차" },
+        { "key": "cctv", "label": "CCTV 유무" },
+
+        { "key": "weather", "label": "기상상태" },
+        { "key": "severity", "label": "영향도(추정)" },
+        { "key": "reporter", "label": "출동/보고 소속" }
+      ]
+    },
+    {
+      "key": "incident_overview",
+      "title": "2. 사고(동향) 개요",
+      "fields": [
+        { "key": "summary", "label": "사고개황" }
+      ]
+    },
+    {
+      "key": "incident_timeline",
+      "title": "3. 사고 경과 및 초동대처",
+      "fields": [
+        { "key": "timeline", "label": "초동대처 및 시간대별 경과" }
+      ]
+    },
+    {
+      "key": "immediate_actions",
+      "title": "4. 조치 사항",
+      "fields": [
+        { "key": "actions_taken", "label": "조치 내용" },
+        { "key": "current_status", "label": "조치 상태" }
+      ]
+    },
+    {
+      "key": "root_cause",
+      "title": "5. 원인 분석 (사실 / 추정 분리)",
+      "fields": [
+        { "key": "facts_only", "label": "확인된 사실 (FACT)" },
+        { "key": "assumptions_only", "label": "추정 및 판단 (ASSUMPTION)" }
+      ]
+    },
+    {
+      "key": "prevention",
+      "title": "6. 재발방지 및 개선 의견",
+      "fields": [
+        { "key": "prevention_plan", "label": "재발방지 대책(제안)" }
+      ]
+    }
+  ]
+}

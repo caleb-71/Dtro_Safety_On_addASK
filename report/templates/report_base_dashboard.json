@@ -1,0 +1,22 @@
+{
+  "title": "DTRO-Safety-On 현황 대시보드 요약",
+  "sections": [
+    {
+      "key": "filter_info",
+      "title": "1. 필터 조건 요약",
+      "fields": [
+        { "key": "summary", "label": "조건" }
+      ]
+    },
+    {
+      "key": "analysis",
+      "title": "2. 통계 요약",
+      "fields": [
+        { "key": "kpi_summary", "label": "KPI 요약" },
+        { "key": "weekly_summary", "label": "주간 추세 요약" },
+        { "key": "pivot_heatmap", "label": "피벗 히트맵" },
+        { "key": "risk_forecast", "label": "리스크 시사점(단정 금지)" }
+      ]
+    }
+  ]
+}

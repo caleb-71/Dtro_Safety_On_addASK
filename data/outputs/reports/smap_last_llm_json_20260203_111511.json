@@ -1,0 +1,36 @@
+{
+  "basic_info": {
+    "row_id": "",
+    "checked_at": "",
+    "check_category": "",
+    "check_type": "",
+    "title": "",
+    "target_dept": "",
+    "issue_type": "",
+    "action_type": "",
+    "place_main": "",
+    "place_detail": "",
+    "inspector": "",
+    "action_status": "",
+    "action_completed_at": ""
+  },
+  "overview": {
+    "summary": ""
+  },
+  "actions": {
+    "action_result": ""
+  },
+  "root_cause": {
+    "facts_only": "",
+    "assumptions_only": ""
+  },
+  "prevention": {
+    "prevention_plan": ""
+  },
+  "analysis": {
+    "kpi_summary": "",
+    "weekly_summary": "",
+    "pivot_heatmap": "",
+    "risk_forecast": ""
+  }
+}

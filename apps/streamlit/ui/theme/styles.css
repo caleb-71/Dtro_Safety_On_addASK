@@ -1,0 +1,329 @@
+/* apps/streamlit/ui/theme/styles.css */
+
+/* =========================================================
+   0) App Background (config.toml의 고급스러운 검은색 적용)
+   ========================================================= */
+.stApp {
+  background-color: transparent;
+}
+
+/* 전체 여백 */
+.block-container { padding-top: 1.0rem; padding-bottom: 2.0rem; }
+hr { border-color: rgba(255,255,255,0.10); }
+
+/* =========================================================
+   1) Typography (다크 배경 전용 기본 글자색)
+   - ⚠️ 전역 div까지 강제하면 카드 내부가 흐려집니다.
+   - 그래서 전역은 최소만 두고, 카드 내부에서 별도 지정합니다.
+   ========================================================= */
+h1, h2, h3, h4, h5, h6 {
+  color: #EAF0FF;
+  letter-spacing: -0.25px;
+}
+.stCaption { color: rgba(234,240,255,0.70) !important; }
+
+/* 본문 기본은 다크 배경 기준 */
+.stMarkdown, .stText, .stWrite, .stAlert, .stInfo, .stSuccess, .stWarning, .stError {
+  color: rgba(234,240,255,0.86);
+}
+
+/* =========================================================
+   2) Hero Banner (페이지 타이틀)
+   ========================================================= */
+.dtro-hero {
+  background: linear-gradient(135deg, rgba(124,92,255,0.22), rgba(0,212,255,0.12));
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 20px;
+  padding: 18px 20px;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.35);
+  margin: 6px 0 14px 0;
+  backdrop-filter: blur(6px);
+}
+.dtro-hero-title {
+  font-size: 30px;
+  font-weight: 950;
+  line-height: 1.15;
+  color: #FFFFFF;
+  letter-spacing: -0.7px;
+  margin: 0;
+}
+.dtro-hero-sub {
+  margin-top: 6px;
+  color: rgba(234,240,255,0.74);
+  font-size: 13px;
+}
+
+/* =========================================================
+   3) Section Title (헤더처럼 굵게)
+   ========================================================= */
+.dtro-section-title {
+  font-size: 18px;
+  font-weight: 950;
+  color: #EAF0FF;
+  margin: 14px 0 10px 0;
+  letter-spacing: -0.35px;
+  position: relative;
+  padding-left: 10px;
+}
+.dtro-section-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 4px;
+  height: 16px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(0,212,255,0.85), rgba(124,92,255,0.75));
+}
+
+/* =========================================================
+   4) Light Cards (입체감 강화 + hover)
+   ========================================================= */
+.card, .dtro-card {
+  background: rgba(255,255,255,0.95);
+  border: 1px solid rgba(15, 23, 42, 0.10);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+  border-radius: 18px;
+  padding: 14px 16px;
+  color: #0B1020;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+.card:hover, .dtro-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.30);
+}
+
+/* ✅ 카드 내부 글자색은 “진하게” 강제해서 가독성 확보 */
+.dtro-card, .dtro-card * , .card, .card * {
+  color: #0B1020 !important;
+}
+.dtro-card .stCaption { color: rgba(15,23,42,0.60) !important; }
+
+/* =========================================================
+   5) KPI Cards (기존 v1 유지)
+   ========================================================= */
+.kpi-card { display: flex; flex-direction: column; gap: 6px; min-height: 94px; }
+.kpi-label {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: -0.15px;
+  color: rgba(15,23,42,0.65) !important;
+}
+.kpi-value {
+  font-size: 30px;
+  font-weight: 950;
+  line-height: 1.05;
+  color: #0B1020 !important;
+}
+.kpi-delta {
+  font-size: 13px;
+  font-weight: 850;
+  color: rgba(15,23,42,0.70) !important;
+}
+.kpi-chip {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 950;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(15,23,42,0.06);
+  color: rgba(15,23,42,0.75) !important;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* =========================================================
+   5-1) KPI Cards (v2 / Unified)  ✅ 최종 단일 정의(중복 제거 완료)
+   - HTML 구조: dtro-card kpi-card-v2 > (kpi-bar + kpi-body)
+   - 배경색은 Python에서 CSS 변수(--kpi-bg)로 주입
+   - background: var(--kpi-bg) !important 로 “연한 바탕색” 확실히 적용
+   ========================================================= */
+
+/* ✅ (삭제됨) 아래와 같은 “중복 정의”는 충돌을 만들므로 제거했습니다.
+   - .kpi-card-v2 { min-height: 104px; } (KPI B안(제목 오른쪽 Δ) 블록)
+   - .kpi-top / .kpi-label-left / .kpi-label-text / .kpi-delta-right (HTML에 없는 클래스)
+   - .kpi-card-v2 { min-height: 104px !important; } (중복 높이 강제)
+   - .kpi-card-v2 .kpi-delta { ... } (v2 HTML은 .kpi-delta-inline 사용)
+*/
+
+.kpi-card-v2{
+  display: flex;
+  align-items: stretch;
+  padding: 0 !important;            /* dtro-card 기본 padding 제거 */
+  height: 104px;
+  min-height: 104px;
+  overflow: hidden;
+
+  /* ✅ 핵심: 파이썬에서 넣는 연한 바탕색을 무조건 적용 */
+  background: var(--kpi-bg, rgba(255,255,255,0.96)) !important;
+}
+
+.kpi-card-v2 .kpi-bar{
+  width: 6px;
+  border-radius: 18px 0 0 18px;     /* 카드 라운드와 일치 */
+  flex: 0 0 6px;
+}
+
+.kpi-card-v2 .kpi-body{
+  flex: 1;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kpi-card-v2 .kpi-title{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kpi-card-v2 .kpi-title .kpi-label{
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: -0.15px;
+  color: rgba(15,23,42,0.75) !important;
+}
+
+.kpi-card-v2 .kpi-title .kpi-chip{
+  margin-left: 0;
+}
+
+.kpi-card-v2 .kpi-title .kpi-delta-inline{
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(15,23,42,0.75) !important; /* 기본, 실제 색은 inline style로 덮임 */
+}
+
+.kpi-card-v2 .kpi-value{
+  margin-top: 6px;
+  font-size: 34px;
+  font-weight: 950;
+  line-height: 1.0;
+  letter-spacing: -0.6px;
+}
+
+
+/* =========================================================
+   6) Code block / 경로 표시 (스크린샷 가독성 문제 해결 핵심)
+   ========================================================= */
+pre, code, .stCodeBlock, div[data-testid="stCodeBlock"] {
+  background: rgba(248,250,252,0.96) !important;
+  color: #0B1020 !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(15,23,42,0.10) !important;
+}
+div[data-testid="stCodeBlock"] * {
+  color: #0B1020 !important;
+}
+
+/* =========================================================
+   7) DataFrame / Tables
+   ========================================================= */
+div[data-testid="stDataFrame"] {
+  background: rgba(255,255,255,0.95);
+  border: 1px solid rgba(15, 23, 42, 0.10);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+}
+
+/* =========================================================
+   8) Widgets (Select/Input/Date/Multiselect) - 밝게 + 입체감
+   ========================================================= */
+div[data-baseweb="select"] > div,
+div[data-baseweb="input"] > div,
+div[data-baseweb="textarea"] > div {
+  background: rgba(255,255,255,0.95) !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(15,23,42,0.12) !important;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.14) !important;
+}
+div[data-baseweb="select"] * ,
+div[data-baseweb="input"] * ,
+div[data-baseweb="textarea"] * {
+  color: #0B1020 !important;
+}
+
+/* 라벨은 다크 배경에서 또렷하게 */
+label { color: rgba(234,240,255,0.90) !important; font-weight: 850 !important; }
+
+/* =========================================================
+   9) Buttons (입체감 + hover)
+   ========================================================= */
+.stButton > button {
+  border-radius: 14px !important;
+  font-weight: 900 !important;
+  padding: 0.55rem 0.9rem !important;
+  border: 1px solid rgba(255,255,255,0.14) !important;
+  box-shadow: 0 12px 26px rgba(0,0,0,0.22) !important;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+.stButton > button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 34px rgba(0,0,0,0.30) !important;
+}
+
+/* =========================================================
+   10) Tabs (조금 더 화려하게)
+   ========================================================= */
+div[data-testid="stTabs"] button {
+  color: rgba(234,240,255,0.82) !important;
+  font-weight: 900 !important;
+}
+div[data-testid="stTabs"] button[aria-selected="true"] {
+  color: #FFFFFF !important;
+  border-bottom: 2px solid rgba(0,212,255,0.85) !important;
+}
+
+/* =========================================================
+   11) Sidebar (톤 통일)
+   ========================================================= */
+section[data-testid="stSidebar"] {
+  background: rgba(11,16,32,0.96);
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+section[data-testid="stSidebar"] * {
+  color: rgba(234,240,255,0.86) !important;
+}
+
+/* KPI B안(제목 오른쪽 Δ) */
+.kpi-card-v2 { min-height: 104px; } /* 카드 높이 안정 */
+.kpi-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.kpi-label-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+.kpi-label-text {
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: -0.15px;
+  color: rgba(15,23,42,0.65) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.kpi-delta-right {
+  font-size: 12px;
+  font-weight: 950;
+  white-space: nowrap;
+  opacity: 0.95;
+}
+
+/* =========================================================
+   KPI Cards v2 - 높이/정렬 완전 고정
+   ========================================================= */
+.kpi-card-v2 { min-height: 104px !important; }
+.kpi-card-v2 .kpi-label { line-height: 1.1 !important; }
+.kpi-card-v2 .kpi-delta { line-height: 1.1 !important; }
