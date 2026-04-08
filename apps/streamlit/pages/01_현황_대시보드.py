@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from apps.streamlit._bootstrap import ensure_project_root_on_syspath
+
 ensure_project_root_on_syspath()
 
 import datetime as dt
@@ -18,8 +19,9 @@ from shared.io.csv_loader import load_csv
 from apps.streamlit.ui.theme.layout import apply_layout, page_container, end_page, section
 from apps.streamlit.ui.components.kpi_cards import kpi_card
 from apps.streamlit.ui.components.charts import bar_chart_card, heatmap_chart_card
-
-# Services (표준화/피벗/리포트)
+from apps.streamlit.ui.components.state import init_dashboard_filters  # [NEW] State 관리 임포트
+# Services
+from backend.services.qa_service import QAService  # [NEW] NLP 연동을 위한 Service
 from backend.services.dashboard_service import (
     ensure_trend_standard_columns,
     ensure_smap_standard_columns,
@@ -33,11 +35,14 @@ from backend.services.dashboard_service import (
 logger = get_logger(__name__)
 
 # =========================================================
-# Page setup
+# Page setup & State Init
 # =========================================================
 st.set_page_config(page_title="현황 요약", layout="wide")
 apply_layout()
 page_container()
+
+# 상태 초기화
+init_dashboard_filters()
 
 st.markdown(
     """
@@ -51,20 +56,23 @@ st.markdown(
 
 
 # =========================================================
-# Small utils (01 화면 전용)
+# Small utils
 # =========================================================
 def _to_dt(s: pd.Series) -> pd.Series:
     return pd.to_datetime(s, errors="coerce")
+
 
 def _pct(n: int, d: int, digits: int = 1) -> str:
     if d <= 0:
         return "-"
     return f"{round((n / d) * 100, digits)}%"
 
+
 def _safe_series(df: pd.DataFrame, col: str, default=None) -> pd.Series:
     if col in df.columns:
         return df[col]
     return pd.Series([default] * len(df), index=df.index)
+
 
 @st.cache_data(show_spinner=False)
 def _load_df(path: Path, mtime: float) -> pd.DataFrame:
@@ -73,11 +81,13 @@ def _load_df(path: Path, mtime: float) -> pd.DataFrame:
     df.columns = [str(c).replace("\n", "").replace("\r", "").strip() for c in df.columns]
     return df
 
+
 def _pick_first_existing(*paths: Path) -> Optional[Path]:
     for p in paths:
         if p.exists():
             return p
     return None
+
 
 def _load_dataset_df(norm_path: Path, csv_path: Path, label: str) -> pd.DataFrame:
     chosen = _pick_first_existing(norm_path, csv_path)
@@ -88,12 +98,14 @@ def _load_dataset_df(norm_path: Path, csv_path: Path, label: str) -> pd.DataFram
     df.attrs["__source_label__"] = label
     return df
 
+
 def _apply_date_range(df: pd.DataFrame, date_col: str, start: dt.date, end: dt.date) -> pd.DataFrame:
     if df.empty or date_col not in df.columns:
         return df
     s = _to_dt(df[date_col])
     mask = (s.dt.date >= start) & (s.dt.date <= end)
     return df[mask].copy()
+
 
 def _month_range(d: dt.date) -> Tuple[dt.date, dt.date]:
     start = d.replace(day=1)
@@ -104,19 +116,24 @@ def _month_range(d: dt.date) -> Tuple[dt.date, dt.date]:
     end = next_month - dt.timedelta(days=1)
     return start, end
 
+
 def _prev_month_range(d: dt.date) -> Tuple[dt.date, dt.date]:
     first_this, _ = _month_range(d)
     prev_end = first_this - dt.timedelta(days=1)
     return _month_range(prev_end)
 
+
 def _year_range(d: dt.date) -> Tuple[dt.date, dt.date]:
     return dt.date(d.year, 1, 1), dt.date(d.year, 12, 31)
+
 
 def _prev_year_range(d: dt.date) -> Tuple[dt.date, dt.date]:
     return dt.date(d.year - 1, 1, 1), dt.date(d.year - 1, 12, 31)
 
+
 def _clean_key_series(s: pd.Series) -> pd.Series:
     return s.astype(str).str.strip().replace({"nan": "미상", "None": "미상", "": "미상"})
+
 
 def _repeat_findings_summary(fsdf: pd.DataFrame, *, group_cols, n: int):
     if fsdf.empty:
@@ -140,6 +157,7 @@ def _repeat_findings_summary(fsdf: pd.DataFrame, *, group_cols, n: int):
     top_cnt = int(top_row.get("cnt", 0))
     return group_cnt, record_cnt, top_label, top_cnt
 
+
 def _download_pdf_button(pdf_path: Path, label: str) -> None:
     try:
         st.download_button(
@@ -153,7 +171,7 @@ def _download_pdf_button(pdf_path: Path, label: str) -> None:
 
 
 # =========================================================
-# Load data (norm first -> csv fallback) - 이 부분이 삭제되었었습니다!
+# Load data (norm first -> csv fallback)
 # =========================================================
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = PROJECT_ROOT / "data"
@@ -180,16 +198,77 @@ if not smap_df.empty:
     smap_df = ensure_smap_standard_columns(smap_df)
 
 with st.expander("🔍 데이터 로드 정보(디버그)"):
-    st.write(f"- trend source: `{trend_df.attrs.get('__source_path__', '-')}`" if not trend_df.empty else "- trend source: 없음")
-    st.write(f"- safety_map source: `{smap_df.attrs.get('__source_path__', '-')}`" if not smap_df.empty else "- safety_map source: 없음")
-
+    st.write(
+        f"- trend source: `{trend_df.attrs.get('__source_path__', '-')}`" if not trend_df.empty else "- trend source: 없음")
+    st.write(
+        f"- safety_map source: `{smap_df.attrs.get('__source_path__', '-')}`" if not smap_df.empty else "- safety_map source: 없음")
 
 # =========================================================
-# 현황 필터 (기간 + 사고/점검 유형) - 1줄 배치로 공간 최적화
+# [NEW] 자연어 대시보드 필터 연동 (NL2SQL)
 # =========================================================
-section("현황 필터")
+section("현황 검색 및 필터")
 
+st.markdown("##### 🤖 자연어 검색 (AI 필터 추천)")
+nl_query = st.chat_input("원하는 데이터를 자연어로 요청해보세요. (예: 2024년 1월부터 8월까지 에스컬레이터 사고)")
+
+# 사용 가능한 옵션값 준비 (자연어 매칭을 위해 필요)
+trend_opts = ["전체"]
+if not trend_df.empty and "incident_type" in trend_df.columns:
+    trend_opts += sorted([x for x in trend_df["incident_type"].dropna().astype(str).unique() if x and x != "nan"])
+
+smap_opts = ["전체"]
+if not smap_df.empty and "issue_type" in smap_df.columns:
+    smap_opts += sorted([x for x in smap_df["issue_type"].dropna().astype(str).unique() if x and x != "nan"])
+
+if nl_query:
+    with st.spinner("AI가 질의를 분석 중입니다..."):
+        qa = QAService()
+        extracted = qa.extract_dashboard_filters(nl_query)
+
+        updated = False
+
+        # 1. 날짜 추출 처리
+        if extracted.get("start_date"):
+            try:
+                st.session_state["dash01_common_start"] = dt.datetime.strptime(extracted["start_date"],
+                                                                               "%Y-%m-%d").date()
+                st.session_state["dash01_common_preset"] = "사용자 지정"
+                updated = True
+            except ValueError:
+                pass
+
+        if extracted.get("end_date"):
+            try:
+                st.session_state["dash01_common_end"] = dt.datetime.strptime(extracted["end_date"], "%Y-%m-%d").date()
+                updated = True
+            except ValueError:
+                pass
+
+        # 2. 키워드 매칭 처리
+        keyword = extracted.get("type_keyword")
+        if keyword and str(keyword).lower() != "null":
+            # trend의 경우 키워드가 포함된 가장 적합한 옵션 찾기
+            matches_t = [opt for opt in trend_opts if opt != "전체" and keyword in opt]
+            if matches_t:
+                st.session_state["dash01_trend_filter"] = matches_t[0]
+                updated = True
+
+            # safety_map의 경우 키워드가 포함된 가장 적합한 옵션 찾기
+            matches_s = [opt for opt in smap_opts if opt != "전체" and keyword in opt]
+            if matches_s:
+                st.session_state["dash01_smap_filter"] = matches_s[0]
+                updated = True
+
+        if updated:
+            st.rerun()
+
+st.divider()
+
+# =========================================================
+# 현황 필터 UI
+# =========================================================
 today = dt.date.today()
+
 
 def sync_dashboard_dates():
     p = st.session_state.dash01_common_preset
@@ -212,48 +291,46 @@ def sync_dashboard_dates():
     elif p == "작년":
         st.session_state.dash01_common_start, st.session_state.dash01_common_end = _prev_year_range(t)
 
-# 5개의 칸으로 나누어 가로 공간을 알차게 활용합니다.
+
 c1, c2, c3, c4, c5 = st.columns([1.1, 1.1, 1.1, 1.3, 1.3])
+
+preset_idx = ["최근 7일", "최근 30일", "최근 90일", "금월", "전월", "금년", "작년", "사용자 지정"].index(
+    st.session_state.get("dash01_common_preset", "최근 30일")
+)
 
 with c1:
     preset = st.selectbox(
         "기간 선택",
         ["최근 7일", "최근 30일", "최근 90일", "금월", "전월", "금년", "작년", "사용자 지정"],
-        index=1,
+        index=preset_idx,
         key="dash01_common_preset",
         on_change=sync_dashboard_dates
     )
 
-start = st.session_state.get("dash01_common_start", today - dt.timedelta(days=29))
-end = st.session_state.get("dash01_common_end", today)
-
 with c2:
-    start = st.date_input("시작일", value=start, key="dash01_common_start")
+    start = st.date_input("시작일", value=st.session_state["dash01_common_start"], key="dash01_common_start")
 with c3:
-    end = st.date_input("종료일", value=end, key="dash01_common_end")
+    end = st.date_input("종료일", value=st.session_state["dash01_common_end"], key="dash01_common_end")
 
 if start > end:
     st.error("시작일이 종료일보다 늦습니다. 날짜를 다시 선택하세요.")
     end_page()
     st.stop()
 
-# 우측 공간에 들어갈 필터 목록 추출 (데이터 내 실제 존재하는 항목만)
-trend_opts = ["전체"]
-if not trend_df.empty and "incident_type" in trend_df.columns:
-    trend_opts += sorted([x for x in trend_df["incident_type"].dropna().astype(str).unique() if x and x != "nan"])
+# State에 저장된 필터값을 안전하게 인덱스로 매핑
+t_val = st.session_state["dash01_trend_filter"]
+idx_t = trend_opts.index(t_val) if t_val in trend_opts else 0
 
-smap_opts = ["전체"]
-if not smap_df.empty and "issue_type" in smap_df.columns:
-    smap_opts += sorted([x for x in smap_df["issue_type"].dropna().astype(str).unique() if x and x != "nan"])
+s_val = st.session_state["dash01_smap_filter"]
+idx_s = smap_opts.index(s_val) if s_val in smap_opts else 0
 
 with c4:
-    trend_filter = st.selectbox("사고(trend) 유형", trend_opts, key="dash01_trend_filter")
+    trend_filter = st.selectbox("사고(trend) 유형", trend_opts, index=idx_t, key="dash01_trend_filter")
 with c5:
-    smap_filter = st.selectbox("점검(safety_map) 지적유형", smap_opts, key="dash01_smap_filter")
-
+    smap_filter = st.selectbox("점검(safety_map) 지적유형", smap_opts, index=idx_s, key="dash01_smap_filter")
 
 # =========================================================
-# 전처리 + 기간 및 필터 적용 (내부 기본값 고정)
+# 전처리 + 기간 및 필터 적용
 # =========================================================
 overdue_days = 14
 repeat_n = 3
@@ -264,13 +341,11 @@ smap_ready = pd.DataFrame()
 
 if not trend_df.empty:
     trend_ready = _apply_date_range(trend_df.copy(), "occurred_at", start, end)
-    # 추가된 사고유형 필터 적용
     if trend_filter != "전체":
         trend_ready = trend_ready[trend_ready["incident_type"].astype(str) == trend_filter]
 
 if not smap_df.empty:
     smap_ready = _apply_date_range(smap_df.copy(), "checked_at", start, end)
-    # 추가된 지적유형 필터 적용
     if smap_filter != "전체":
         smap_ready = smap_ready[smap_ready["issue_type"].astype(str) == smap_filter]
 
@@ -278,8 +353,8 @@ if not smap_df.empty:
         today_ts = pd.Timestamp(dt.date.today())
         smap_ready["경과일수"] = (today_ts - pd.to_datetime(smap_ready["checked_at"], errors="coerce")).dt.days
         smap_ready["조치소요일"] = (
-            pd.to_datetime(smap_ready["action_completed_at"], errors="coerce")
-            - pd.to_datetime(smap_ready["checked_at"], errors="coerce")
+                pd.to_datetime(smap_ready["action_completed_at"], errors="coerce")
+                - pd.to_datetime(smap_ready["checked_at"], errors="coerce")
         ).dt.days
         smap_ready["지연여부"] = (smap_ready["조치상태"].astype(str) == "미조치") & (smap_ready["경과일수"] >= overdue_days)
     else:
@@ -288,8 +363,7 @@ if not smap_df.empty:
 trend_f = trend_ready.copy()
 smap_f = smap_ready.copy()
 
-st.caption(f"✅ 필터 결과: 사고(trend): {len(trend_f)}건 / 점검(safety_map): {len(smap_f)}건")
-
+st.caption(f"✅ 필터 적용 결과: 사고(trend): {len(trend_f)}건 / 점검(safety_map): {len(smap_f)}건")
 
 # =========================================================
 # 핵심 KPI
@@ -321,7 +395,6 @@ rep_group_cnt, rep_record_cnt, rep_top_label, rep_top_cnt = _repeat_findings_sum
     smap_f, group_cols=repeat_group_cols, n=repeat_n
 )
 
-
 # --- 1) 사고/동향 (Trend) 구역 ---
 st.markdown(
     """
@@ -344,8 +417,7 @@ with krow1[3]:
 with krow1[4]:
     kpi_card("사고 최근일", t_latest.date() if pd.notna(t_latest) else "-", tone="info", chip="최신", group="trend")
 
-st.markdown("<div style='margin-bottom: 18px;'></div>", unsafe_allow_html=True) # 두 구역 사이의 간격
-
+st.markdown("<div style='margin-bottom: 18px;'></div>", unsafe_allow_html=True)
 
 # --- 2) 안전지도/점검 (Safety Map) 구역 ---
 st.markdown(
@@ -363,7 +435,8 @@ with krow2[0]:
 with krow2[1]:
     kpi_card("점검 미조치", s_open, delta=_pct(s_open, s_total), tone="danger", chip="리스크", group="safety_map")
 with krow2[2]:
-    kpi_card("점검 지연", s_overdue, delta=_pct(s_overdue, s_total), tone="warn", chip=f"≥{overdue_days}일", group="safety_map")
+    kpi_card("점검 지연", s_overdue, delta=_pct(s_overdue, s_total), tone="warn", chip=f"≥{overdue_days}일",
+             group="safety_map")
 with krow2[3]:
     kpi_card(f"반복지적 그룹(≥{repeat_n})", rep_group_cnt, tone="critical", chip="패턴", group="safety_map")
 with krow2[4]:
@@ -404,7 +477,6 @@ with c4:
         series = _safe_series(smap_f, "action_type", _safe_series(smap_f, "조치구분", "미상"))
         bar_chart_card(title="조치구분 분포", series=series.value_counts())
 
-
 # =========================================================
 # 히트맵(요약 피벗)
 # =========================================================
@@ -424,7 +496,6 @@ with h2:
     else:
         pivot_s = pivot_heatmap(smap_f, row_dim="target_dept", col_dim="issue_type", top_n=12)
         heatmap_chart_card(title="safety_map 히트맵", pivot_df=pivot_s, subtitle="부서 × 지적유형 (상위 12)", height=360)
-
 
 # =========================================================
 # 대시보드 요약 PDF
