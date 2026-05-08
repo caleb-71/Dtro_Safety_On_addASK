@@ -207,7 +207,7 @@ da, db, dc = st.columns([1, 1, 2])
 with da:
     data_force = st.checkbox("강제 재인덱싱(--force)", value=False)
 with db:
-    data_embed_batch = st.number_input("Vector 임베딩 배치", min_value=1, max_value=64, value=16, step=1)
+    data_embed_batch = st.number_input("Vector 임베딩 배치", min_value=1, max_value=128, value=16, step=1)
 with dc:
     # ✅ [신규 추가] Graph 추출 시 LLM 부하를 막기 위한 제한 옵션
     graph_limit = st.number_input(
@@ -262,7 +262,7 @@ with pcol1: st.metric("PDF 문서 개수", f"{len(pdfs)}개")
 
 colA, colB, colC = st.columns([1, 1, 2])
 with colA: force = st.checkbox("강제 재인덱싱 [PDF]", value=False)
-with colB: embed_batch_size = st.number_input("임베딩 배치 [PDF]", min_value=1, max_value=64, value=16, step=1)
+with colB: embed_batch_size = st.number_input("임베딩 배치 [PDF]", min_value=1, max_value=128, value=16, step=1)
 
 run_btn = st.button("🚀 규정 PDF 벡터 인덱싱 실행", type="secondary")
 
