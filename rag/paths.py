@@ -8,17 +8,19 @@ from pathlib import Path
 def get_index_root() -> Path:
     """
     인덱스 루트 디렉토리 결정 규칙 (단일 진실)
-
     1) 환경변수 DTRO_INDEX_ROOT가 있으면 최우선 사용
-       - 다른 PC / 서버에서 위치를 바꾸고 싶을 때 사용
-    2) 기본값: 모든 Windows PC에서 한글 경로 문제 없는 안전 경로
-       - C:\\DTRO_DATA
+    2) 기본값: 프로젝트 최상위 루트 아래의 'data' 폴더를 상대 경로로 지정
     """
     env = os.getenv("DTRO_INDEX_ROOT")
     if env:
         return Path(env)
 
-    return Path(r"C:\DTRO_DATA")
+    # __file__은 현재 파일(rag/paths.py)의 절대 경로입니다.
+    # .resolve().parents[1] 을 하면 'rag' 폴더를 넘어 프로젝트 최상위 폴더에 도달합니다.
+    project_root = Path(__file__).resolve().parents[1]
+
+    # 프로젝트 최상위 폴더 아래의 data 폴더를 루트로 반환
+    return project_root / "data"
 
 
 def ensure_dir(path: Path) -> Path:
